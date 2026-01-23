@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organigrama RCM</title>
+    
+    <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
@@ -21,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3DNJQGN34"></script>
     <script>
@@ -30,6 +33,7 @@
 
       gtag('config', 'G-H3DNJQGN34');
     </script>
+    
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         /* --- SWISS DESIGN VARIABLES --- */
@@ -58,27 +62,54 @@
             position: fixed; /* Fixes it to the screen */
             top: 24px;
             left: 24px;
-            width: 335px;
-            padding: 24px;
+            width: 380px; /* Slightly wider to fit logo */
+            padding: 20px;
             z-index: 100;
             
             /* Glassmorphism Effect */
-            background-color: rgba(244, 244, 244, 0.65); /* Semi-transparent */
-            backdrop-filter: blur(3px); /* The blur effect */
-            -webkit-backdrop-filter: blur(3px); /* Safari support */
+            background-color: rgba(244, 244, 244, 0.75); 
+            backdrop-filter: blur(8px); 
+            -webkit-backdrop-filter: blur(8px); 
             
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-            pointer-events: none; /* Allows clicking through the empty parts if needed */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            pointer-events: none;
+            
+            /* Flexbox Layout for Logo + Text */
+            display: flex;
+            align-items: center;
+            gap: 16px; 
+        }
+
+        /* Logo container */
+        .header-logo {
+            width: 60px; /* Adjust based on your logo shape */
+            height: 60px;
+            flex-shrink: 0; /* Prevent logo from squishing */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Text container */
+        .header-text {
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
-            margin: 0 0 8px 0;
+            margin: 0 0 4px 0;
             color: var(--text-primary);
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             line-height: 1.2;
         }
 
@@ -194,8 +225,14 @@
 <body>
 
     <header>
-        <h1>Recinto de Ciencias Médicas (RCM)</h1>
-        <h2>Estructura Organizacional Académica y Administrativa</h2>
+        <div class="header-logo">
+            <!-- Ensure this path is correct relative to the HTML file -->
+            <img src="assets/logos/RCM-UPR-logo.svg" alt="RCM Logo">
+        </div>
+        <div class="header-text">
+            <h1>Recinto de Ciencias Médicas</h1>
+            <h2>Estructura Organizacional Académica y Administrativa</h2>
+        </div>
     </header>
 
     <div id="loading">Cargando visualización...</div>

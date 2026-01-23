@@ -20,12 +20,12 @@
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Ofi. Planificación, Investigación y Avalúo Institucional",
+                    "name": "Oficina Planificación, Investigación y Avalúo Institucional",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Ofi. de Desarrollo Académico",
+                    "name": "Oficina de Desarrollo Académico",
                     "type": "office",
                     "initial_collapsed": true
                   },
@@ -599,20 +599,97 @@
                 "type": "school",
                 "initial_collapsed": true,
                 "head": "Dr. Wanda T. Maldonado Dávila",
+                "head_title": "Decana",
                 "sub_elements": [
                   {
-                    "name": "Departamentos Académicos",
-                    "type": "department_group",
+                    "name": "Decano Asociado de Asuntos Académicos",
+                    "type": "administrative_position",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Depto. de Ciencias Farmacéuticas",
-                        "type": "department",
+                        "name": "División de Evaluación de Currículum y Efectividad Institucional",
+                        "type": "division",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Depto. de Práctica de Farmacia",
-                        "type": "department",
+                        "name": "División de Educación Continua y Estudios Profesionales",
+                        "type": "division",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Decano Asistente de Investigación y Programas de Postgrado",
+                    "type": "administrative_position",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Programa de Postgrado",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Decano Asistente de Asuntos Estudiantiles",
+                    "type": "administrative_position",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Administrador",
+                    "type": "administrative_position",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director de Desarrollo Institucional y Relaciones Externas",
+                    "type": "administrative_position",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director del Departamento de Práctica de Farmacia",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Programas de Residencia en Farmacia",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Oficina de Educación Experiencial",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Centro de Información de Medicamentos e Investigación",
+                        "type": "center",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Museo de Farmacia y Jardín de Plantas Medicinales",
+                    "type": "facility",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director del Departamento de Ciencias Farmacéuticas",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Unidad de Apoyo de Laboratorios",
+                        "type": "unit",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Laboratorios de Investigación",
+                        "type": "facility",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Laboratorio de Habilidades Farmacéuticas",
+                        "type": "facility",
                         "initial_collapsed": true
                       }
                     ]
