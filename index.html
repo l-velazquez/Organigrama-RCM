@@ -1,415 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RCM Organizational Chart</title>
-  <style>
-    :root {
-      --line-color: #ccc;
-      --node-bg: #fff;
-      --node-border: #007bff;
-      --text-color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama RCM</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* --- SWISS DESIGN VARIABLES --- */
+        :root {
+            --bg-color: #F4F4F4; /* Light Grey Background */
+            --node-bg: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-secondary: #757575;
+            --accent-color: #FF3B30; /* Swiss Red */
+            --line-color: #C0C0C0;
+            --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
 
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f9;
-      margin: 0;
-      padding: 40px;
-      overflow-x: auto;
-      text-align: center;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            font-family: var(--font-stack);
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
 
-    .tree {
-      display: inline-block;
-      text-align: left;
-    }
+        /* --- BLURRED HEADER CARD --- */
+        header {
+            position: fixed; /* Fixes it to the screen */
+            top: 24px;
+            left: 24px;
+            width: 335px;
+            padding: 24px;
+            z-index: 100;
+            
+            /* Glassmorphism Effect */
+            background-color: rgba(244, 244, 244, 0.65); /* Semi-transparent */
+            backdrop-filter: blur(10px); /* The blur effect */
+            -webkit-backdrop-filter: blur(12px); /* Safari support */
+            
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            pointer-events: none; /* Allows clicking through the empty parts if needed */
+        }
 
-    .tree ul {
-      padding-top: 20px;
-      position: relative;
-      transition: all 0.5s;
-      display: flex;
-      justify-content: center;
-    }
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
 
-    .tree li {
-      float: left;
-      text-align: center;
-      list-style-type: none;
-      position: relative;
-      padding: 20px 10px 0 10px;
-      transition: all 0.5s;
-    }
+        h2 {
+            font-size: 13px;
+            font-weight: 400;
+            margin: 0;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
 
-    /* Connecting Lines */
-    .tree li::before,
-    .tree li::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 50%;
-      border-top: 2px solid var(--line-color);
-      width: 50%;
-      height: 20px;
-    }
+        /* --- CHART STYLES --- */
+        svg {
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+        }
 
-    .tree li::after {
-      right: auto;
-      left: 50%;
-      border-left: 2px solid var(--line-color);
-    }
+        svg:active {
+            cursor: grabbing;
+        }
 
-    .tree li:only-child::after,
-    .tree li:only-child::before {
-      display: none;
-    }
+        /* The Node Container */
+        .node rect {
+            fill: var(--node-bg);
+            stroke: var(--line-color);
+            stroke-width: 1px;
+            transition: stroke 0.2s ease, filter 0.2s ease;
+        }
 
-    .tree li:only-child {
-      padding-top: 0;
-    }
+        .node:hover rect {
+            stroke: var(--text-primary);
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+        }
 
-    .tree li:first-child::before,
-    .tree li:last-child::after {
-      border: 0 none;
-    }
+        /* HTML Content inside Node (ForeignObject) */
+        .node-content-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center */
+            padding: 0 16px; /* Horizontal padding */
+            box-sizing: border-box;
+            pointer-events: none; /* Let clicks pass through to the rect */
+        }
 
-    .tree li:last-child::before {
-      border-right: 2px solid var(--line-color);
-      border-radius: 0 5px 0 0;
-    }
+        .node-role {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 2px;
+            
+            /* Text Wrapping Logic */
+            white-space: normal; 
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limit to 3 lines */
+            -webkit-box-orient: vertical;
+        }
 
-    .tree li:first-child::after {
-      border-radius: 5px 0 0 0;
-    }
+        .node-person {
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-    .tree ul ul::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      border-left: 2px solid var(--line-color);
-      width: 0;
-      height: 20px;
-    }
+        /* Expand/Collapse Button */
+        .node-circle {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .node-circle:hover {
+            transform: scale(1.2);
+        }
 
-    /* Node Styling */
-    .node {
-      border: 1px solid var(--node-border);
-      padding: 10px 15px;
-      text-decoration: none;
-      color: var(--text-color);
-      font-family: arial, verdana, tahoma;
-      font-size: 14px;
-      display: inline-block;
-      background: var(--node-bg);
-      border-radius: 5px;
-      transition: all 0.3s;
-      cursor: pointer;
-      min-width: 120px;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+        .link {
+            fill: none;
+            stroke: var(--line-color);
+            stroke-width: 1.5px;
+        }
 
-    .node:hover {
-      background: #e8f0fe;
-      transform: scale(1.02);
-    }
+        /* --- UTILS --- */
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
 
-    .node .title {
-      font-weight: bold;
-      display: block;
-    }
-
-    .node .meta {
-      font-size: 11px;
-      color: #666;
-      margin-top: 4px;
-      display: block;
-    }
-
-    /* Expand/Collapse Indicator */
-    .indicator {
-      display: block;
-      margin: 5px auto 0 auto;
-      width: 12px;
-      height: 12px;
-      background: #007bff;
-      color: white;
-      border-radius: 50%;
-      line-height: 12px;
-      font-size: 10px;
-      cursor: pointer;
-    }
-
-    .indicator.hidden {
-      visibility: hidden;
-    }
-
-    /* Collapsed State */
-    .collapsed ul {
-      display: none;
-    }
-
-    .collapsed .indicator {
-      background: #dc3545;
-    }
-
-    /* Modal Styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .modal.active {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal-content {
-      background-color: #fefefe;
-      padding: 30px;
-      border: 1px solid var(--node-border);
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      max-width: 500px;
-      width: 90%;
-      max-height: 80vh;
-      overflow-y: auto;
-      text-align: center;
-    }
-
-    .modal-content h2 {
-      margin-top: 0;
-      color: var(--node-border);
-      font-size: 24px;
-    }
-
-    .modal-content .content-item {
-      margin: 15px 0;
-      padding: 10px;
-      background: #f9f9f9;
-      border-radius: 5px;
-    }
-
-    .modal-content .label {
-      font-weight: bold;
-      color: #007bff;
-      display: block;
-    }
-
-    .modal-content .value {
-      color: #333;
-      margin-top: 5px;
-    }
-
-    .modal-close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      line-height: 20px;
-    }
-
-    .modal-close:hover,
-    .modal-close:focus {
-      color: #000;
-    }
-  </style>
+        #error-msg {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
 
-  <div id="chart" class="tree"></div>
+    <header>
+        <h1>Recinto de Ciencias Médicas (RCM)</h1>
+        <h2>Estructura Organizacional Académica y Administrativa</h2>
+    </header>
 
-  <!-- Modal for displaying node contents -->
-  <div id="nodeModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <div id="modalBody"></div>
+    <div id="loading">Cargando visualización...</div>
+    
+    <div id="error-msg">
+        <h3>Error de conexión</h3>
+        <p>No se pudo cargar 'organigrama.json'.</p>
+        <p style="font-size: 12px; color: #666;">Asegúrese de ejecutar este archivo usando un servidor local (ej. Live Server en VS Code o Python http.server) debido a las políticas de seguridad del navegador.</p>
     </div>
-  </div>
 
-  <script>
-    const container = document.getElementById("chart");
-    const modal = document.getElementById("nodeModal");
-    const modalBody = document.getElementById("modalBody");
-    const modalClose = document.querySelector(".modal-close");
+    <div id="chart"></div>
 
-    // Modal functions
-    function openModal(item) {
-      let content = `<h2>${item.name}</h2>`;
-      
-      if (item.type) {
-        content += `<div class="content-item"><span class="label">Type:</span><span class="value">${item.type}</span></div>`;
-      }
-      
-      if (item.head) {
-        content += `<div class="content-item"><span class="label">Head:</span><span class="value">${item.head}</span></div>`;
-      }
-      
-      if (item.description) {
-        content += `<div class="content-item"><span class="label">Description:</span><span class="value">${item.description}</span></div>`;
-      }
-
-      if (item.sub_elements && item.sub_elements.length > 0) {
-        content += `<div class="content-item"><span class="label">Sub-elements:</span><span class="value">${item.sub_elements.length} items</span></div>`;
-      }
-
-      modalBody.innerHTML = content;
-      modal.classList.add("active");
-    }
-
-    function closeModal() {
-      modal.classList.remove("active");
-    }
-
-    // Close modal when clicking the X
-    modalClose.addEventListener("click", closeModal);
-
-    // Close modal when clicking outside the modal content
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    function createTree(data) {
-      const ul = document.createElement("ul");
-
-      let items = [];
-      
-      if (data.organization) {
-        const struct = data.organization.structure;
-        items = [struct.rectoria, struct.support_offices, struct.academic_units];
-      } else if (Array.isArray(data)) {
-        items = data;
-      } else {
-        items = [data];
-      }
-
-      items.forEach((item) => {
-        if (!item) return;
-        const li = document.createElement("li");
-
-        const nodeDiv = document.createElement("div");
-        nodeDiv.className = "node";
+    <script>
+        // --- CONFIGURATION ---
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const duration = 600; 
         
-        const title = document.createElement("span");
-        title.className = "title";
-        title.textContent = item.name;
-        nodeDiv.appendChild(title);
+        // Increased sizes for text wrapping
+        const nodeWidth = 240; 
+        const nodeHeight = 85; 
+        
+        // --- SVG SETUP ---
+        const svg = d3.select("#chart").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .call(d3.zoom().scaleExtent([0.1, 2]).on("zoom", (event) => {
+                g.attr("transform", event.transform);
+            }))
+            .append("g")
+            .attr("transform", "translate(150, " + (height / 2) + ")"); // Start slightly right
 
-        // Add click event to show modal
-        title.addEventListener("click", (e) => {
-          e.stopPropagation();
-          openModal(item);
-        });
+        const g = svg.append("g");
 
-        const meta = document.createElement("span");
-        meta.className = "meta";
-        meta.textContent = item.type || (item.head ? `Head: ${item.head}` : "");
-        nodeDiv.appendChild(meta);
+        // --- TREE LAYOUT ---
+        const treeMap = d3.tree().nodeSize([nodeHeight + 30, nodeWidth + 80]);
 
-        li.appendChild(nodeDiv);
+        let i = 0;
+        let root;
 
-        if (item.sub_elements && item.sub_elements.length > 0) {
-          const childUl = createTree(item.sub_elements);
-          li.appendChild(childUl);
+        // --- LOAD DATA ---
+        d3.json("organigrama.json")
+            .then(data => {
+                document.getElementById('loading').style.display = 'none';
 
-          const indicator = document.createElement("span");
-          indicator.className = "indicator";
-          let isCollapsed = false;
+                const rawRoot = data.organization.structure.rectoria;
+                const processedData = formatData(rawRoot);
 
-          // CHECK: Does JSON have initial_collapsed set to true?
-          if (item.initial_collapsed === true) {
-              li.classList.add("collapsed");
-              indicator.textContent = "+";
-              isCollapsed = true;
-          } else {
-              indicator.textContent = "-";
-          }
-          
-          nodeDiv.appendChild(indicator);
+                root = d3.hierarchy(processedData, d => d.children);
+                root.x0 = height / 2;
+                root.y0 = 0;
 
-          nodeDiv.addEventListener("click", (e) => {
-            e.stopPropagation();
-            
-            // Toggle logic
-            if (li.classList.contains("collapsed")) {
-                li.classList.remove("collapsed");
-                indicator.textContent = "-";
-            } else {
-                li.classList.add("collapsed");
-                indicator.textContent = "+";
+                // Handle initial collapsed state from JSON
+                root.descendants().forEach(d => {
+                    if (d.data.initial_collapsed && d.children) {
+                        d._children = d.children;
+                        d.children = null;
+                    }
+                });
+
+                update(root);
+            })
+            .catch(error => {
+                console.error(error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error-msg').style.display = 'block';
+            });
+
+        function formatData(node) {
+            let newNode = { ...node };
+            if (newNode.sub_elements) {
+                newNode.children = newNode.sub_elements.map(formatData);
+                delete newNode.sub_elements;
             }
-          });
-        } else {
-             const indicator = document.createElement("span");
-             indicator.className = "indicator hidden";
-             nodeDiv.appendChild(indicator);
+            return newNode;
         }
 
-        ul.appendChild(li);
-      });
+        // --- RENDER FUNCTION ---
+        function update(source) {
+            const treeData = treeMap(root);
 
-      return ul;
-    }
+            // Compute the new tree layout
+            const nodes = treeData.descendants();
+            const links = treeData.links();
 
-    // Fetch the external JSON file
-    fetch('organigrama.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then(data => {
-        container.innerHTML = ""; 
-        
-        const rootUl = document.createElement("ul");
-        const rootLi = document.createElement("li");
-        
-        const rootNode = document.createElement("div");
-        rootNode.className = "node";
-        rootNode.innerHTML = `<span class="title">${data.organization.name}</span><span class="meta">${data.organization.type}</span>`;
-        rootLi.appendChild(rootNode);
-        
-        const generatedTree = createTree(data); 
-        rootLi.appendChild(generatedTree);
-        
-        const rootIndicator = document.createElement("span");
-        rootIndicator.className = "indicator";
-        rootIndicator.textContent = "-";
-        rootNode.appendChild(rootIndicator);
+            // Fixed-depth positioning (Horizontal)
+            nodes.forEach(d => { d.y = d.depth * 320; });
 
-        rootNode.addEventListener("click", () => {
-            if (rootLi.classList.contains("collapsed")) {
-                rootLi.classList.remove("collapsed");
-                rootIndicator.textContent = "-";
-            } else {
-                rootLi.classList.add("collapsed");
-                rootIndicator.textContent = "+";
+            // ****************** Nodes ******************
+            const node = g.selectAll('g.node')
+                .data(nodes, d => d.id || (d.id = ++i));
+
+            // Enter new nodes at the parent's previous position
+            const nodeEnter = node.enter().append('g')
+                .attr('class', 'node')
+                .attr("transform", d => "translate(" + source.y0 + "," + source.x0 + ")")
+                .on('click', click);
+
+            // 1. Rectangle Background
+            nodeEnter.append('rect')
+                .attr('width', nodeWidth)
+                .attr('height', nodeHeight)
+                .attr('x', 0)
+                .attr('y', -nodeHeight / 2)
+                .attr('rx', 6) // Slightly more rounded
+                .attr('ry', 6);
+
+            // 2. ForeignObject for HTML Content (Text Wrapping)
+            nodeEnter.append('foreignObject')
+                .attr('width', nodeWidth)
+                .attr('height', nodeHeight)
+                .attr('x', 0)
+                .attr('y', -nodeHeight / 2)
+                .append('xhtml:div')
+                .attr('class', 'node-content-wrapper')
+                .html(d => {
+                    const role = d.data.name;
+                    const person = d.data.head ? d.data.head : "";
+                    
+                    // Conditionally render person only if exists
+                    let html = `<div class="node-role">${role}</div>`;
+                    if (person) {
+                        html += `<div class="node-person">${person}</div>`;
+                    }
+                    return html;
+                });
+
+            // 3. Circle Button (Expand/Collapse)
+            nodeEnter.append('circle')
+                .attr('class', 'node-circle')
+                .attr('r', 7)
+                .attr('cx', nodeWidth)
+                .attr('cy', 0)
+                .style("opacity", d => (d._children || d.children) ? 1 : 0);
+
+            // UPDATE
+            const nodeUpdate = node.merge(nodeEnter);
+
+            // Transition to the new position
+            nodeUpdate.transition()
+                .duration(duration)
+                .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
+
+            // Style updates based on state
+            nodeUpdate.select('rect')
+                .style("fill", "#FFF")
+                .style("stroke", d => d._children ? "#999" : "#E0E0E0");
+
+            nodeUpdate.select('circle.node-circle')
+                .style("fill", d => d._children ? "#FF3B30" : "#FFF") // Red if closed
+                .style("stroke", d => d._children ? "#FF3B30" : "#999")
+                .style("opacity", d => (d._children || d.children) ? 1 : 0);
+
+            // EXIT
+            const nodeExit = node.exit().transition()
+                .duration(duration)
+                .attr("transform", d => "translate(" + source.y + "," + source.x + ")")
+                .remove();
+
+            nodeExit.select('rect').attr('fill-opacity', 0);
+            nodeExit.select('foreignObject').style('opacity', 0);
+            nodeExit.select('circle').attr('opacity', 0);
+
+            // ****************** Links ******************
+            const link = g.selectAll('path.link')
+                .data(links, d => d.target.id);
+
+            const linkEnter = link.enter().insert('path', "g")
+                .attr("class", "link")
+                .attr('d', d => {
+                    const o = { x: source.x0, y: source.y0 };
+                    return diagonal(o, o);
+                });
+
+            const linkUpdate = link.merge(linkEnter);
+
+            linkUpdate.transition()
+                .duration(duration)
+                .attr('d', d => diagonal(d.source, d.target));
+
+            link.exit().transition()
+                .duration(duration)
+                .attr('d', d => {
+                    const o = { x: source.x, y: source.y };
+                    return diagonal(o, o);
+                })
+                .remove();
+
+            nodes.forEach(d => {
+                d.x0 = d.x;
+                d.y0 = d.y;
+            });
+
+            function diagonal(s, d) {
+                const sourceX = s.y + nodeWidth;
+                const sourceY = s.x;
+                const targetX = d.y;
+                const targetY = d.x;
+
+                return `M ${sourceX} ${sourceY}
+                        C ${(sourceX + targetX) / 2} ${sourceY},
+                          ${(sourceX + targetX) / 2} ${targetY},
+                          ${targetX} ${targetY}`;
             }
-        });
 
-        rootUl.appendChild(rootLi);
-        container.appendChild(rootUl);
-      })
-      .catch(error => {
-        console.error("Error loading JSON:", error);
-        container.innerHTML = "<p>Error loading organizational data. Ensure 'organigrama.json' exists and you are running a local server.</p>";
-      });
-
-  </script>
+            function click(event, d) {
+                // If the node has children (collapsed or expanded)
+                if (d.children || d._children) {
+                    if (d.children) {
+                        d._children = d.children;
+                        d.children = null;
+                    } else {
+                        d.children = d._children;
+                        d._children = null;
+                    }
+                    update(d);
+                }
+            }
+        }
+    </script>
 </body>
 </html>
