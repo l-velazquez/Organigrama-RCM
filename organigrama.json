@@ -1,0 +1,658 @@
+{
+  "organization": {
+    "name": "Recinto de Ciencias Médicas (RCM)",
+    "type": "academic_medical_institution",
+    "structure": {
+      "rectoria": {
+        "name": "Rectoría",
+        "type": "executive_leadership",
+        "initial_collapsed": false,
+        "sub_elements": [
+          {
+            "name": "Decanato de Asuntos Académicos",
+            "type": "deanery",
+            "head": "Dra. Yasmin Pedrogo",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Oficinas de Apoyo Académico-Administrativo",
+                "type": "support_office",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Ofi. Planificación, Investigación y Avalúo Institucional",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Ofi. de Desarrollo Académico",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Biblioteca",
+                    "type": "library",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Programas y Centros de Investigación",
+                "type": "research_programs",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "RCMI",
+                    "type": "research_center",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "MBRS",
+                    "type": "research_center",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Instituto de Ciencias de la Conducta",
+                    "type": "research_institute",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Instituto de Neurobiología",
+                    "type": "research_institute",
+                    "initial_collapsed": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Decanato de Investigación",
+            "type": "deanery",
+            "head": "Dr. Annabell C. Segarra Marrero",
+            "initial_collapsed": true
+          },
+          {
+            "name": "Decanato de Estudiantes",
+            "type": "deanery",
+            "head": "Prof. Iris Cátala Torres",
+            "initial_collapsed": true
+          },
+          {
+            "name": "Decanato de Administración",
+            "type": "deanery",
+            "head": "Mrs. María M. Santiago Morales",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Gerencia de Capital Humano",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Departamento de Finanzas",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Departamento de Recursos Físicos",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Ofi. de Planificación y Diseño de Construcción",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Oficina de Compras y Suministros",
+                "type": "office",
+                "initial_collapsed": true
+              }
+            ]
+          },
+          {
+            "name": "Unidades Académicas",
+            "type": "academic_divisions",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Escuela de Medicina",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Deptos. Ciencias Básicas",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Microbiología y Zoología Médica",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Farmacología y Toxicología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Bioquímica",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Anatomía y Neurobiología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Fisiología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Deptos. Ciencias Clínicas",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Oftalmología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Pediatría",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Obstetricia y Ginecología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Medicina Física, Rehabilitación y Salud Deportiva",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Neurología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Medicina",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Psiquiatría",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Medicina de Familia",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Unidad de Bioestadística y Sistemas de Información",
+                        "type": "unit",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Medicina de Emergencia",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Dermatología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Patología y Medicina de Laboratorio",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Anestesiología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Ciencias Radiológicas",
+                        "type": "department_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Radiología Diagnóstica",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Medicina Nuclear",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Radioterapia",
+                            "type": "department",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Cirugía",
+                        "type": "department_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Ortopedia",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Neurocirugía",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Urología",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Otorrinolaringología y Cirugía de Cabeza y Cuello",
+                            "type": "department",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Escuela de Medicina Dental",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Depto. de Ciencias Restaurativas",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Odontología Operativa",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Prostodoncia",
+                        "type": "division",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Depto. de Ciencias Quirúrgicas",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Cirugía Oral",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Endodoncia / Periodoncia",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Ciencias Diagnósticas",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Biología Oral",
+                        "type": "division",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Depto. de Ciencias Ecológicas",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Ortodoncia",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Odontopediatría",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Odontología Comunitaria",
+                        "type": "division",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Escuela de Enfermería",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Programas Académicos",
+                    "type": "academic_programs",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Doctorado en Filosofía en Enfermería (Ph.D.)",
+                        "type": "degree_program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Bachillerato en Ciencias en Enfermería (BSN)",
+                        "type": "degree_program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Maestría en Ciencias en Enfermería (MSN)",
+                        "type": "degree_program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Doctorado en Práctica de Enfermería con Especialidad en Anestesia (DNP-SA)",
+                        "type": "degree_program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Escuela de Farmacia",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Departamentos Académicos",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Depto. de Ciencias Farmacéuticas",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Depto. de Práctica de Farmacia",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Escuela de Profesiones de la Salud",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Certificados Post-Bachillerato",
+                    "type": "certificate_programs",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Internado en Dietética",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Tecnología Médica (Cert./Ruta según aplique)",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Citotecnología",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bachilleratos",
+                    "type": "bachelor_programs",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Ciencias de la Salud",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Educación en Salud",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Tecnología Médica",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Tecnología en Medicina Nuclear",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Tecnología Veterinaria",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grados Asociados",
+                    "type": "associate_programs",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Tecnología Radiológica",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Asistencia Dental (Funciones Expandidas)",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Tecnología Oftálmica (Técnico)",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Maestrías",
+                    "type": "master_programs",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Patología del Habla-Lenguaje",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Terapia Ocupacional",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Ciencias en Laboratorio Clínico",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Administración de Información en Salud",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Maestría Post-Doctoral en Investigación Clínica y Translacional",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Escuela Graduada de Salud Pública",
+                "type": "school",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Departamentos",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Administración de Servicios de Salud",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Terapia Física (DPT)",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Bioestadística y Epidemiología",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Audiología (Au.D.)",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Desarrollo Humano",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Salud Ambiental",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Ciencias Sociales",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Educación en Salud Pública",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Demografía",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Oficinas de Apoyo y Staff de Rectoría",
+            "type": "support_structure",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Presupuesto",
+                "type": "office",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Procuraduría Claustral",
+                "type": "office",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Asesoría Legal",
+                "type": "office",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Procuraduría Estudiantil",
+                "type": "office",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Junta de Donaciones Anatómicas",
+                "type": "committee",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Junta Administrativa",
+                "type": "committee",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Prensa y Comunicaciones",
+                "type": "office",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Senado Académico",
+                "type": "governing_body",
+                "head": "Dr. Raul Rivera González",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Centro de Primates",
+                "type": "research_facility",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Ayuda y Servicios al Personal",
+                "type": "service",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Sistemas de Información",
+                "type": "it_department",
+                "initial_collapsed": false
+              },
+              {
+                "name": "Executive Secretary",
+                "type": "position",
+                "head": "Dr. Raul Rivera González",
+                "initial_collapsed": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

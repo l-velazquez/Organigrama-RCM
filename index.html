@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCM Organizational Chart</title>
+  <style>
+    :root {
+      --line-color: #ccc;
+      --node-bg: #fff;
+      --node-border: #007bff;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 40px;
+      overflow-x: auto;
+      text-align: center;
+    }
+
+    .tree {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .tree ul {
+      padding-top: 20px;
+      position: relative;
+      transition: all 0.5s;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tree li {
+      float: left;
+      text-align: center;
+      list-style-type: none;
+      position: relative;
+      padding: 20px 10px 0 10px;
+      transition: all 0.5s;
+    }
+
+    /* Connecting Lines */
+    .tree li::before,
+    .tree li::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      border-top: 2px solid var(--line-color);
+      width: 50%;
+      height: 20px;
+    }
+
+    .tree li::after {
+      right: auto;
+      left: 50%;
+      border-left: 2px solid var(--line-color);
+    }
+
+    .tree li:only-child::after,
+    .tree li:only-child::before {
+      display: none;
+    }
+
+    .tree li:only-child {
+      padding-top: 0;
+    }
+
+    .tree li:first-child::before,
+    .tree li:last-child::after {
+      border: 0 none;
+    }
+
+    .tree li:last-child::before {
+      border-right: 2px solid var(--line-color);
+      border-radius: 0 5px 0 0;
+    }
+
+    .tree li:first-child::after {
+      border-radius: 5px 0 0 0;
+    }
+
+    .tree ul ul::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-left: 2px solid var(--line-color);
+      width: 0;
+      height: 20px;
+    }
+
+    /* Node Styling */
+    .node {
+      border: 1px solid var(--node-border);
+      padding: 10px 15px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-family: arial, verdana, tahoma;
+      font-size: 14px;
+      display: inline-block;
+      background: var(--node-bg);
+      border-radius: 5px;
+      transition: all 0.3s;
+      cursor: pointer;
+      min-width: 120px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .node:hover {
+      background: #e8f0fe;
+      transform: scale(1.02);
+    }
+
+    .node .title {
+      font-weight: bold;
+      display: block;
+    }
+
+    .node .meta {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Expand/Collapse Indicator */
+    .indicator {
+      display: block;
+      margin: 5px auto 0 auto;
+      width: 12px;
+      height: 12px;
+      background: #007bff;
+      color: white;
+      border-radius: 50%;
+      line-height: 12px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .indicator.hidden {
+      visibility: hidden;
+    }
+
+    /* Collapsed State */
+    .collapsed ul {
+      display: none;
+    }
+
+    .collapsed .indicator {
+      background: #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="chart" class="tree"></div>
+
+  <script>
+    const container = document.getElementById("chart");
+
+    function createTree(data) {
+      const ul = document.createElement("ul");
+
+      let items = [];
+      
+      if (data.organization) {
+        const struct = data.organization.structure;
+        items = [struct.rectoria, struct.support_offices, struct.academic_units];
+      } else if (Array.isArray(data)) {
+        items = data;
+      } else {
+        items = [data];
+      }
+
+      items.forEach((item) => {
+        if (!item) return;
+        const li = document.createElement("li");
+
+        const nodeDiv = document.createElement("div");
+        nodeDiv.className = "node";
+        
+        const title = document.createElement("span");
+        title.className = "title";
+        title.textContent = item.name;
+        nodeDiv.appendChild(title);
+
+        const meta = document.createElement("span");
+        meta.className = "meta";
+        meta.textContent = item.type || (item.head ? `Head: ${item.head}` : "");
+        nodeDiv.appendChild(meta);
+
+        li.appendChild(nodeDiv);
+
+        if (item.sub_elements && item.sub_elements.length > 0) {
+          const childUl = createTree(item.sub_elements);
+          li.appendChild(childUl);
+
+          const indicator = document.createElement("span");
+          indicator.className = "indicator";
+          let isCollapsed = false;
+
+          // CHECK: Does JSON have initial_collapsed set to true?
+          if (item.initial_collapsed === true) {
+              li.classList.add("collapsed");
+              indicator.textContent = "+";
+              isCollapsed = true;
+          } else {
+              indicator.textContent = "-";
+          }
+          
+          nodeDiv.appendChild(indicator);
+
+          nodeDiv.addEventListener("click", (e) => {
+            e.stopPropagation();
+            
+            // Toggle logic
+            if (li.classList.contains("collapsed")) {
+                li.classList.remove("collapsed");
+                indicator.textContent = "-";
+            } else {
+                li.classList.add("collapsed");
+                indicator.textContent = "+";
+            }
+          });
+        } else {
+             const indicator = document.createElement("span");
+             indicator.className = "indicator hidden";
+             nodeDiv.appendChild(indicator);
+        }
+
+        ul.appendChild(li);
+      });
+
+      return ul;
+    }
+
+    // Fetch the external JSON file
+    fetch('organigrama.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then(data => {
+        container.innerHTML = ""; 
+        
+        const rootUl = document.createElement("ul");
+        const rootLi = document.createElement("li");
+        
+        const rootNode = document.createElement("div");
+        rootNode.className = "node";
+        rootNode.innerHTML = `<span class="title">${data.organization.name}</span><span class="meta">${data.organization.type}</span>`;
+        rootLi.appendChild(rootNode);
+        
+        const generatedTree = createTree(data); 
+        rootLi.appendChild(generatedTree);
+        
+        const rootIndicator = document.createElement("span");
+        rootIndicator.className = "indicator";
+        rootIndicator.textContent = "-";
+        rootNode.appendChild(rootIndicator);
+
+        rootNode.addEventListener("click", () => {
+            if (rootLi.classList.contains("collapsed")) {
+                rootLi.classList.remove("collapsed");
+                rootIndicator.textContent = "-";
+            } else {
+                rootLi.classList.add("collapsed");
+                rootIndicator.textContent = "+";
+            }
+        });
+
+        rootUl.appendChild(rootLi);
+        container.appendChild(rootUl);
+      })
+      .catch(error => {
+        console.error("Error loading JSON:", error);
+        container.innerHTML = "<p>Error loading organizational data. Ensure 'organigrama.json' exists and you are running a local server.</p>";
+      });
+
+  </script>
+</body>
+</html>
