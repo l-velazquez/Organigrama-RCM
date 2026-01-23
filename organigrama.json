@@ -44,6 +44,7 @@
                   {
                     "name": "RCMI",
                     "type": "research_center",
+                    "head": "Dr. Emma Fernández-Repollet",
                     "initial_collapsed": true
                   },
                   {
@@ -597,6 +598,7 @@
                 "name": "Escuela de Farmacia",
                 "type": "school",
                 "initial_collapsed": true,
+                "head": "Dr. Wanda T. Maldonado Dávila",
                 "sub_elements": [
                   {
                     "name": "Departamentos Académicos",
@@ -624,93 +626,89 @@
                 "head_title": "Decana",
                 "initial_collapsed": true,
                 "sub_elements": [
+              
                   {
-                    "name": "Chancellor",
-                    "type": "administrative",
-                    "initial_collapsed": true
-                  },
-                  {
-                    "name": "Advisory Board",
+                    "name": "Junta Asesora",
                     "type": "advisory",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Standing Committees",
+                    "name": "Comités Permanentes",
                     "type": "committees",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Student Affairs Office",
+                    "name": "Oficina de Asuntos Estudiantiles",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Health Clinics",
+                    "name": "Clínicas de Salud",
                     "type": "clinics",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Academic Affairs Office",
+                    "name": "Oficina de Asuntos Académicos",
                     "type": "office",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Undergraduate Programs Department",
+                        "name": "Departamento de Programas de Pregrado",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Administrative Affairs Office",
+                            "name": "Oficina de Asuntos Administrativos",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "External Resources Office",
+                            "name": "Oficina de Recursos Externos",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Programs",
+                            "name": "Programas",
                             "type": "programs_container",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Dental Assistant with Expanded Function",
+                                "name": "Asistencia Dental con Funciones Expandidas",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Health Education",
+                                "name": "Educación en Salud",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Health Sciences",
+                                "name": "Ciencias de la Salud",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Medical Technology",
+                                "name": "Tecnología Médica",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Nuclear Medicine Technology",
+                                "name": "Tecnología de Medicina Nuclear",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Ophthalmic Technology",
+                                "name": "Tecnología Oftálmica",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Radiologic Technology",
+                                "name": "Tecnología Radiológica",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Veterinary Technology",
+                                "name": "Tecnología Veterinaria",
                                 "type": "program",
                                 "initial_collapsed": true
                               }
@@ -719,64 +717,64 @@
                         ]
                       },
                       {
-                        "name": "Graduate Programs Department",
+                        "name": "Departamento de Programas Graduados",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Information Systems and Educational Resources Office",
+                            "name": "Oficina de Sistemas de Información y Recursos Educativos",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Programs",
+                            "name": "Programas",
                             "type": "programs_container",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Administration of Health Information",
+                                "name": "Administración de Información en Salud",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Audiology",
+                                "name": "Audiología",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Clinical Laboratory Sciences",
+                                "name": "Ciencias en Laboratorio Clínico",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Cytotechnology",
+                                "name": "Citotecnología",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Dietetic Internship",
+                                "name": "Internado en Dietética",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Speech-Language Pathology",
+                                "name": "Patología del Habla-Lenguaje",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Physical Therapy",
+                                "name": "Terapia Física",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Occupational Therapy",
+                                "name": "Terapia Ocupacional",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Clinical Investigation",
+                                "name": "Investigación Clínica",
                                 "type": "program",
-                                "note": "Academic grade in junction with Medical School of UPR-MSC",
+                                "note": "Grado académico en conjunto con la Escuela de Medicina de UPR-MSC",
                                 "initial_collapsed": true
                               }
                             ]
@@ -784,38 +782,38 @@
                         ]
                       },
                       {
-                        "name": "Continued Education and Professional Studies Division",
+                        "name": "División de Educación Continua y Estudios Profesionales",
                         "type": "division",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Projects",
+                            "name": "Proyectos",
                             "type": "projects_container",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
                                 "name": "PIES",
                                 "type": "project",
-                                "full_name": "Interdisciplinary Project of Excellence in Service",
+                                "full_name": "Proyecto Interdisciplinario de Excelencia en Servicios",
                                 "initial_collapsed": true
                               },
                               {
                                 "name": "IIPESAG",
                                 "type": "project",
-                                "full_name": "Research Institute for Global Health Promotion and Health Education",
+                                "full_name": "Instituto de Investigación para la Promoción de la Salud Global y Educación en Salud",
                                 "initial_collapsed": true
                               },
                               {
                                 "name": "CEAEM",
                                 "type": "project",
-                                "full_name": "Center of Medical Emergency Advanced Studies",
+                                "full_name": "Centro de Estudios Avanzados en Emergencias Médicas",
                                 "initial_collapsed": true
                               },
                               {
                                 "name": "HIREC",
                                 "type": "project",
-                                "full_name": "Hispanics in Research Capability",
-                                "note": "Academic grade in junction with Medical School of UPR-MSC",
+                                "full_name": "Hispanos en Capacidad de Investigación",
+                                "note": "Grado académico en conjunto con la Escuela de Medicina de UPR-MSC",
                                 "initial_collapsed": true
                               }
                             ]
