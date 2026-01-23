@@ -156,14 +156,132 @@
     .collapsed .indicator {
       background: #dc3545;
     }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      padding: 30px;
+      border: 1px solid var(--node-border);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+      color: var(--node-border);
+      font-size: 24px;
+    }
+
+    .modal-content .content-item {
+      margin: 15px 0;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    .modal-content .label {
+      font-weight: bold;
+      color: #007bff;
+      display: block;
+    }
+
+    .modal-content .value {
+      color: #333;
+      margin-top: 5px;
+    }
+
+    .modal-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 20px;
+    }
+
+    .modal-close:hover,
+    .modal-close:focus {
+      color: #000;
+    }
   </style>
 </head>
 <body>
 
   <div id="chart" class="tree"></div>
 
+  <!-- Modal for displaying node contents -->
+  <div id="nodeModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
   <script>
     const container = document.getElementById("chart");
+    const modal = document.getElementById("nodeModal");
+    const modalBody = document.getElementById("modalBody");
+    const modalClose = document.querySelector(".modal-close");
+
+    // Modal functions
+    function openModal(item) {
+      let content = `<h2>${item.name}</h2>`;
+      
+      if (item.type) {
+        content += `<div class="content-item"><span class="label">Type:</span><span class="value">${item.type}</span></div>`;
+      }
+      
+      if (item.head) {
+        content += `<div class="content-item"><span class="label">Head:</span><span class="value">${item.head}</span></div>`;
+      }
+      
+      if (item.description) {
+        content += `<div class="content-item"><span class="label">Description:</span><span class="value">${item.description}</span></div>`;
+      }
+
+      if (item.sub_elements && item.sub_elements.length > 0) {
+        content += `<div class="content-item"><span class="label">Sub-elements:</span><span class="value">${item.sub_elements.length} items</span></div>`;
+      }
+
+      modalBody.innerHTML = content;
+      modal.classList.add("active");
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+    }
+
+    // Close modal when clicking the X
+    modalClose.addEventListener("click", closeModal);
+
+    // Close modal when clicking outside the modal content
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
 
     function createTree(data) {
       const ul = document.createElement("ul");
@@ -190,6 +308,12 @@
         title.className = "title";
         title.textContent = item.name;
         nodeDiv.appendChild(title);
+
+        // Add click event to show modal
+        title.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openModal(item);
+        });
 
         const meta = document.createElement("span");
         meta.className = "meta";
