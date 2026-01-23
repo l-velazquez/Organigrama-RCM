@@ -74,8 +74,219 @@
           {
             "name": "Decanato de Estudiantes",
             "type": "deanery",
-            "head": "Prof. Iris Cátala Torres",
-            "initial_collapsed": true
+            "head": "Edna Pacheco Acosta, DrPH, MSc",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Oficina Decano Estudiantes",
+                "type": "admin_office",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Secretaria Ejecutiva I",
+                    "type": "position",
+                    "head": "Jussett Vega Vega"
+                  },
+                  {
+                    "name": "Decana Asociada de Estudiantes",
+                    "type": "position",
+                    "head": "Vacante"
+                  }
+                ]
+              },
+              {
+                "name": "Administración",
+                "type": "department",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Ayudante Especial Decana - Asuntos Administrativos",
+                    "type": "position",
+                    "head": "Carmen I. Rivera Lozada"
+                  },
+                  {
+                    "name": "Asistente Administrativo IV",
+                    "type": "position"
+                  },
+                  {
+                    "name": "Mensajero II",
+                    "type": "position",
+                    "head": "Héctor Meléndez"
+                  }
+                ]
+              },
+              {
+                "name": "Admisiones",
+                "type": "office",
+                "head": "Maribel Ortiz",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Secretaria Administrativa II",
+                    "type": "position",
+                    "head": "Vacante"
+                  },
+                  {
+                    "name": "Oficial Admisiones II",
+                    "type": "position",
+                    "head": "Janette Carrasquillo"
+                  },
+                  {
+                    "name": "Oficial Admisiones II",
+                    "type": "position",
+                    "head": "Vilma Santiago"
+                  },
+                  {
+                    "name": "Oficial Admisiones III",
+                    "type": "position",
+                    "head": "Raiza Hidalgo"
+                  },
+                  {
+                    "name": "Oficial Admisiones III",
+                    "type": "position",
+                    "head": "Ruth Rivera Rolón"
+                  },
+                  {
+                    "name": "Oficial Admisiones III",
+                    "type": "position",
+                    "head": "Yuliana Santiago"
+                  }
+                ]
+              },
+              {
+                "name": "Centro Estudiantil de Consejería y Sicología (CECSI)",
+                "type": "center",
+                "head": "Frank Valentín Silva",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Secretaria Administrativa II",
+                    "type": "position",
+                    "head": "Wendy Guzmán Hernaiz"
+                  },
+                  {
+                    "name": "Consejero III",
+                    "type": "position",
+                    "head": "Vacante"
+                  },
+                  {
+                    "name": "Consejero III",
+                    "type": "position",
+                    "head": "Carlos Cañuelas"
+                  },
+                  {
+                    "name": "Consejero III",
+                    "type": "position",
+                    "head": "Maribel Pagán"
+                  },
+                  {
+                    "name": "Sicólogo III",
+                    "type": "position",
+                    "head": "María M Hernández"
+                  }
+                ]
+              },
+              {
+                "name": "Servicios Médicos a Estudiantes",
+                "type": "medical_services",
+                "head": "Sohé Berríos Díaz",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Enfermera Generalista",
+                    "type": "position",
+                    "head": "Carolyn Domínguez"
+                  },
+                  {
+                    "name": "Secretaria Administrativa II",
+                    "type": "position",
+                    "head": "Vacante"
+                  }
+                ]
+              },
+              {
+                "name": "Asistencia Económica",
+                "type": "financial_aid",
+                "head": "Yolanda Rivera Rolón",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Secretaria Administrativa II",
+                    "type": "position",
+                    "head": "Vacante"
+                  },
+                  {
+                    "name": "Oficial Asistencia Económica IV",
+                    "type": "position",
+                    "head": "Juan Burgos"
+                  },
+                  {
+                    "name": "Oficial Asistencia Económica III",
+                    "type": "position",
+                    "head": "Lymari Vélez"
+                  },
+                  {
+                    "name": "Oficial Asistencia Económica II",
+                    "type": "position",
+                    "head": "Leyda Márquez"
+                  },
+                  {
+                    "name": "Técnico en Tec. de Información",
+                    "type": "position",
+                    "head": "Omar Santiago"
+                  },
+                  {
+                    "name": "Reg. Datos Sist. en Línea I",
+                    "type": "position",
+                    "head": "Efraín Rosario"
+                  }
+                ]
+              },
+              {
+                "name": "Promoción y Reclutamiento Estudiantil",
+                "type": "office",
+                "head": "Sohé Berríos Díaz",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Asistente Administrativa III",
+                    "type": "position",
+                    "head": "Johanna Rosario"
+                  }
+                ]
+              },
+              {
+                "name": "Oficina Servicios a Estudiantes con Impedimento (OSEI)",
+                "type": "support_office",
+                "head": "Yeraldin Valerio González",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Asistente Administrativa II",
+                    "type": "position",
+                    "head": "Terie Rey Berríos"
+                  }
+                ]
+              },
+              {
+                "name": "Programa Calidad de Vida",
+                "type": "program",
+                "head": "Vilma Santiago",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Coordinador Actividades Deportivas",
+                    "type": "position"
+                  }
+                ]
+              },
+              {
+                "name": "Consejo General de Estudiantes",
+                "type": "council",
+                "head": "Frank Valentín Silva",
+                "initial_collapsed": true
+              }
+            ]
           },
           {
             "name": "Decanato de Administración",
@@ -409,113 +620,207 @@
               {
                 "name": "Escuela de Profesiones de la Salud",
                 "type": "school",
+                "head": "Lourdes E. Soto de Laurido, Ed.D., MPHE, MHS honoris causa",
+                "head_title": "Decana",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Certificados Post-Bachillerato",
-                    "type": "certificate_programs",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Internado en Dietética",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Tecnología Médica (Cert./Ruta según aplique)",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Citotecnología",
-                        "type": "program",
-                        "initial_collapsed": true
-                      }
-                    ]
+                    "name": "Chancellor",
+                    "type": "administrative",
+                    "initial_collapsed": true
                   },
                   {
-                    "name": "Bachilleratos",
-                    "type": "bachelor_programs",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Ciencias de la Salud",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Educación en Salud",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Tecnología Médica",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Tecnología en Medicina Nuclear",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Tecnología Veterinaria",
-                        "type": "program",
-                        "initial_collapsed": true
-                      }
-                    ]
+                    "name": "Advisory Board",
+                    "type": "advisory",
+                    "initial_collapsed": true
                   },
                   {
-                    "name": "Grados Asociados",
-                    "type": "associate_programs",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Tecnología Radiológica",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Asistencia Dental (Funciones Expandidas)",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Tecnología Oftálmica (Técnico)",
-                        "type": "program",
-                        "initial_collapsed": true
-                      }
-                    ]
+                    "name": "Standing Committees",
+                    "type": "committees",
+                    "initial_collapsed": true
                   },
                   {
-                    "name": "Maestrías",
-                    "type": "master_programs",
+                    "name": "Student Affairs Office",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Health Clinics",
+                    "type": "clinics",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Academic Affairs Office",
+                    "type": "office",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Patología del Habla-Lenguaje",
-                        "type": "program",
-                        "initial_collapsed": true
+                        "name": "Undergraduate Programs Department",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Administrative Affairs Office",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "External Resources Office",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Programs",
+                            "type": "programs_container",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Dental Assistant with Expanded Function",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Health Education",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Health Sciences",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Medical Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Nuclear Medicine Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Ophthalmic Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Radiologic Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Veterinary Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
-                        "name": "Terapia Ocupacional",
-                        "type": "program",
-                        "initial_collapsed": true
+                        "name": "Graduate Programs Department",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Information Systems and Educational Resources Office",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Programs",
+                            "type": "programs_container",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Administration of Health Information",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Audiology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Clinical Laboratory Sciences",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Cytotechnology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Dietetic Internship",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Speech-Language Pathology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Physical Therapy",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Occupational Therapy",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Clinical Investigation",
+                                "type": "program",
+                                "note": "Academic grade in junction with Medical School of UPR-MSC",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
-                        "name": "Ciencias en Laboratorio Clínico",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Administración de Información en Salud",
-                        "type": "program",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Maestría Post-Doctoral en Investigación Clínica y Translacional",
-                        "type": "program",
-                        "initial_collapsed": true
+                        "name": "Continued Education and Professional Studies Division",
+                        "type": "division",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Projects",
+                            "type": "projects_container",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "PIES",
+                                "type": "project",
+                                "full_name": "Interdisciplinary Project of Excellence in Service",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "IIPESAG",
+                                "type": "project",
+                                "full_name": "Research Institute for Global Health Promotion and Health Education",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "CEAEM",
+                                "type": "project",
+                                "full_name": "Center of Medical Emergency Advanced Studies",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "HIREC",
+                                "type": "project",
+                                "full_name": "Hispanics in Research Capability",
+                                "note": "Academic grade in junction with Medical School of UPR-MSC",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
