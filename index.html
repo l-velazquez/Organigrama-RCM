@@ -42,7 +42,7 @@
             --node-bg: #FFFFFF;
             --text-primary: #1A1A1A;
             --text-secondary: #757575;
-            --accent-color: #FF3B30; /* Swiss Red */
+            --accent-color: #278b65; /* Swiss Red */
             --line-color: #C0C0C0;
             --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
@@ -382,8 +382,8 @@
                 .style("stroke", d => d._children ? "#999" : "#E0E0E0");
 
             nodeUpdate.select('circle.node-circle')
-                .style("fill", d => d._children ? "#FF3B30" : "#FFF") // Red if closed
-                .style("stroke", d => d._children ? "#FF3B30" : "#999")
+                .style("fill", d => d._children ? "#ff6400" : "#FFF") // Red if closed
+                .style("stroke", d => d._children ? "#ff6400" : "#999")
                 .style("opacity", d => (d._children || d.children) ? 1 : 0);
 
             // EXIT
