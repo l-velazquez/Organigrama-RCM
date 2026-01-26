@@ -904,56 +904,113 @@
               {
                 "name": "Escuela Graduada de Salud Pública",
                 "type": "school",
+                "head": "Edgardo Ruiz Cora, MPH, PhD",
                 "initial_collapsed": true,
                 "sub_elements": [
+                  {
+                    "name": "Asistente Especial del Decano - Oficina de Administración",
+                    "type": "position",
+                    "head": "Juan J. Tejada Guzmán, MBA",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Centro de Informática",
+                        "type": "center",
+                        "head": "José Sobrino Delgado"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Asuntos Académicos",
+                    "type": "academic_affairs",
+                    "head": "Ivelisse García Meléndez, MS, EdD",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Unidades de Apoyo Académico",
+                        "type": "support_office",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Oficina de Currículo y Evaluación",
+                            "type": "office",
+                            "head": "Ivelisse M. García Meléndez, EdD"
+                          },
+                          {
+                            "name": "División de Educación Continua y Estudios Profesionales",
+                            "type": "division",
+                            "head": "Xionara Castillo Meléndez, MS"
+                          },
+                          {
+                            "name": "Programas Doctorales en Salud Pública",
+                            "type": "program",
+                            "head": "Ivelisse M. García Meléndez, EdD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Asuntos Estudiantiles",
+                    "type": "student_affairs",
+                    "head": "Yiselly Vázquez Guzmán, MPHE, MA, CGG, MCHES, EdD",
+                    "initial_collapsed": true
+                  },
+                  {
+                        "name": "Unidades Especiales de Investigación y Servicio",
+                        "type": "research_unit",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Centro para la Evaluación e Investigación Sociomédica",
+                            "type": "research_center",
+                            "head": "Edgardo Ruiz Cora, MPH, PhD"
+                          },
+                          {
+                            "name": "Programa de Planificación Familiar, Título X",
+                            "type": "program",
+                            "head": "Ramón Sánchez Rodríguez, MD"
+                          },
+                          {
+                            "name": "Instituto de Discapacidades del Desarrollo",
+                            "type": "institute",
+                            "head": "Carol Salas Pagán, PsyD"
+                          }
+                        ]
+                      },
                   {
                     "name": "Departamentos",
                     "type": "department_group",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Administración de Servicios de Salud",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Terapia Física (DPT)",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
                         "name": "Bioestadística y Epidemiología",
                         "type": "department",
+                        "head": "Juan C. Reyes Pulliza, EdD",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Audiología (Au.D.)",
+                        "name": "Administración de Servicios de Salud",
                         "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Desarrollo Humano",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Salud Ambiental",
-                        "type": "department",
+                        "head": "Marisol Peña Orellana, MS, EdD",
                         "initial_collapsed": true
                       },
                       {
                         "name": "Ciencias Sociales",
                         "type": "department",
+                        "head": "Hiram V. Arroyo Acevedo, PhD",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Educación en Salud Pública",
+                        "name": "Desarrollo Humano",
                         "type": "department",
+                        "head": "Ana M. Parrilla Rodríguez, MD",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Demografía",
+                        "name": "Salud Ambiental",
                         "type": "department",
+                        "head": "Luis A. Bonilla Soto, PhD",
                         "initial_collapsed": true
                       }
                     ]
