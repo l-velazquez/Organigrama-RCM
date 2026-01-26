@@ -36,57 +36,75 @@
     
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        /* --- SWISS DESIGN VARIABLES --- */
+        /* --- CSS VARIABLES & THEMES --- */
         :root {
-            --bg-color: #F4F4F4; /* Light Grey Background */
+            /* Light Mode (Default) */
+            --bg-color: #F4F4F4;
             --node-bg: #FFFFFF;
             --text-primary: #1A1A1A;
             --text-secondary: #757575;
-            --accent-color: #278b65; /* Swiss Red */
+            --accent-color: #FF3B30;
             --line-color: #C0C0C0;
+            --card-bg: rgba(244, 244, 244, 0.75);
+            --card-border: rgba(255, 255, 255, 0.5);
+            --node-stroke: #E0E0E0;
+            --node-stroke-collapsed: #999;
             --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* Dark Mode Class */
+        body.dark-mode {
+            --bg-color: #121212;
+            --node-bg: #1E1E1E;
+            --text-primary: #E0E0E0;
+            --text-secondary: #A0A0A0;
+            --accent-color: #FF453A;
+            --line-color: #404040;
+            --card-bg: rgba(30, 30, 30, 0.75);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --node-stroke: #333333;
+            --node-stroke-collapsed: #666;
         }
 
         body {
             margin: 0;
             padding: 0;
             background-color: var(--bg-color);
+            color: var(--text-primary);
             font-family: var(--font-stack);
             overflow: hidden;
             width: 100vw;
             height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* --- BLURRED HEADER CARD --- */
+        /* --- UI OVERLAYS --- */
+        
+        /* 1. Header Card */
         header {
-            position: fixed; /* Fixes it to the screen */
+            position: fixed;
             top: 24px;
             left: 24px;
-            width: 380px; /* Slightly wider to fit logo */
+            width: 380px;
             padding: 20px;
             z-index: 100;
-            
-            /* Glassmorphism Effect */
-            background-color: rgba(244, 244, 244, 0.75); 
-            backdrop-filter: blur(4px); 
-            -webkit-backdrop-filter: blur(4px); 
-            
-            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: var(--card-bg); 
+            backdrop-filter: blur(8px); 
+            -webkit-backdrop-filter: blur(8px); 
+            border: 1px solid var(--card-border);
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             pointer-events: none;
-            
-            /* Flexbox Layout for Logo + Text */
             display: flex;
             align-items: center;
             gap: 16px; 
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
-        /* Logo container */
         .header-logo {
-            width: 60px; /* Adjust based on your logo shape */
+            width: 60px;
             height: 60px;
-            flex-shrink: 0; /* Prevent logo from squishing */
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -98,7 +116,6 @@
             object-fit: contain;
         }
 
-        /* Text container */
         .header-text {
             display: flex;
             flex-direction: column;
@@ -121,6 +138,102 @@
             line-height: 1.4;
         }
 
+        /* 2. Theme Toggle Switch */
+        .theme-switch-wrapper {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-switch {
+            display: inline-block;
+            height: 34px;
+            position: relative;
+            width: 60px;
+        }
+
+        .theme-switch input {
+            display: none;
+        }
+
+        .slider {
+            background-color: #ccc;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 26px;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--accent-color);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .mode-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            pointer-events: none;
+            user-select: none;
+        }
+        .icon-sun { left: 8px; color: #fff; opacity: 0; transition: opacity 0.3s; }
+        .icon-moon { right: 8px; color: #555; opacity: 1; transition: opacity 0.3s; }
+        
+        input:checked ~ .slider .icon-sun { opacity: 1; }
+        input:checked ~ .slider .icon-moon { opacity: 0; }
+
+
+        /* 3. Footer (GitHub Info) */
+        .footer-info {
+            position: fixed;
+            bottom: 16px;
+            right: 24px;
+            z-index: 90;
+            font-size: 11px;
+            color: var(--text-secondary);
+            background-color: var(--card-bg);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid var(--card-border);
+            text-align: right;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+
         /* --- CHART STYLES --- */
         svg {
             width: 100%;
@@ -132,29 +245,27 @@
             cursor: grabbing;
         }
 
-        /* The Node Container */
         .node rect {
             fill: var(--node-bg);
             stroke: var(--line-color);
             stroke-width: 1px;
-            transition: stroke 0.2s ease, filter 0.2s ease;
+            transition: fill 0.3s ease, stroke 0.3s ease;
         }
 
         .node:hover rect {
             stroke: var(--text-primary);
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
         }
 
-        /* HTML Content inside Node (ForeignObject) */
         .node-content-wrapper {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Vertically center */
-            padding: 0 16px; /* Horizontal padding */
+            justify-content: center;
+            padding: 0 16px;
             box-sizing: border-box;
-            pointer-events: none; /* Let clicks pass through to the rect */
+            pointer-events: none;
         }
 
         .node-role {
@@ -163,13 +274,12 @@
             color: var(--text-primary);
             line-height: 1.25;
             margin-bottom: 2px;
-            
-            /* Text Wrapping Logic */
             white-space: normal; 
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 3; /* Limit to 3 lines */
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
+            transition: color 0.3s ease;
         }
 
         .node-person {
@@ -180,9 +290,9 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            transition: color 0.3s ease;
         }
 
-        /* Expand/Collapse Button */
         .node-circle {
             cursor: pointer;
             transition: all 0.2s ease;
@@ -196,6 +306,7 @@
             fill: none;
             stroke: var(--line-color);
             stroke-width: 1.5px;
+            transition: stroke 0.3s ease;
         }
 
         /* --- UTILS --- */
@@ -214,7 +325,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: white;
+            background: var(--node-bg);
+            color: var(--text-primary);
             padding: 30px;
             border-left: 4px solid var(--accent-color);
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -224,9 +336,9 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div class="header-logo">
-            <!-- Ensure this path is correct relative to the HTML file -->
             <img src="assets/logos/RCM-UPR-logo.svg" alt="RCM Logo">
         </div>
         <div class="header-text">
@@ -235,27 +347,93 @@
         </div>
     </header>
 
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <!-- Simple SVG icons for sun/moon inside slider -->
+                <span class="mode-icon icon-moon">🌙</span>
+                <span class="mode-icon icon-sun">☀️</span>
+            </div>
+        </label>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <span id="last-updated">Cargando fecha...</span><br>
+        <a href="https://github.com/l-velazquez/Organigrama-RCM" target="_blank">Ver en GitHub</a>
+    </div>
+
     <div id="loading">Cargando visualización...</div>
     
     <div id="error-msg">
         <h3>Error de conexión</h3>
         <p>No se pudo cargar 'organigrama.json'.</p>
-        <p style="font-size: 12px; color: #666;">Asegúrese de ejecutar este archivo usando un servidor local (ej. Live Server en VS Code o Python http.server) debido a las políticas de seguridad del navegador.</p>
+        <p style="font-size: 12px; opacity: 0.7;">Asegúrese de ejecutar este archivo usando un servidor local.</p>
     </div>
 
     <div id="chart"></div>
 
     <script>
-        // --- CONFIGURATION ---
+        // --- 1. DARK MODE LOGIC ---
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']('dark-mode');
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        // --- 2. GITHUB LAST UPDATED LOGIC ---
+        const repoOwner = 'l-velazquez';
+        const repoName = 'Organigrama-RCM';
+        const repoBranch = 'd3-gemini-3-pro';
+        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits?sha=${repoBranch}&per_page=1`;
+
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) throw new Error("GitHub API Error");
+                return response.json();
+            })
+            .then(data => {
+                if (data && data.length > 0) {
+                    const dateStr = data[0].commit.committer.date;
+                    const dateObj = new Date(dateStr);
+                    
+                    // Format date in Spanish
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = dateObj.toLocaleDateString('es-ES', options);
+                    
+                    document.getElementById('last-updated').textContent = `Actualizado: ${formattedDate}`;
+                }
+            })
+            .catch(err => {
+                console.warn("Could not fetch GitHub date", err);
+                document.getElementById('last-updated').textContent = "Fecha no disponible";
+            });
+
+
+        // --- 3. D3 CHART CONFIGURATION ---
         const width = window.innerWidth;
         const height = window.innerHeight;
         const duration = 600; 
-        
-        // Increased sizes for text wrapping
         const nodeWidth = 240; 
         const nodeHeight = 85; 
         
-        // --- SVG SETUP ---
         const svg = d3.select("#chart").append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -263,17 +441,15 @@
                 g.attr("transform", event.transform);
             }))
             .append("g")
-            .attr("transform", "translate(150, " + (height / 2) + ")"); // Start slightly right
+            .attr("transform", "translate(150, " + (height / 2) + ")");
 
         const g = svg.append("g");
 
-        // --- TREE LAYOUT ---
         const treeMap = d3.tree().nodeSize([nodeHeight + 30, nodeWidth + 80]);
 
         let i = 0;
         let root;
 
-        // --- LOAD DATA ---
         d3.json("organigrama.json")
             .then(data => {
                 document.getElementById('loading').style.display = 'none';
@@ -285,7 +461,6 @@
                 root.x0 = height / 2;
                 root.y0 = 0;
 
-                // Handle initial collapsed state from JSON
                 root.descendants().forEach(d => {
                     if (d.data.initial_collapsed && d.children) {
                         d._children = d.children;
@@ -310,37 +485,32 @@
             return newNode;
         }
 
-        // --- RENDER FUNCTION ---
         function update(source) {
             const treeData = treeMap(root);
-
-            // Compute the new tree layout
             const nodes = treeData.descendants();
             const links = treeData.links();
 
-            // Fixed-depth positioning (Horizontal)
             nodes.forEach(d => { d.y = d.depth * 320; });
 
-            // ****************** Nodes ******************
+            // Nodes
             const node = g.selectAll('g.node')
                 .data(nodes, d => d.id || (d.id = ++i));
 
-            // Enter new nodes at the parent's previous position
             const nodeEnter = node.enter().append('g')
                 .attr('class', 'node')
                 .attr("transform", d => "translate(" + source.y0 + "," + source.x0 + ")")
                 .on('click', click);
 
-            // 1. Rectangle Background
+            // Rect
             nodeEnter.append('rect')
                 .attr('width', nodeWidth)
                 .attr('height', nodeHeight)
                 .attr('x', 0)
                 .attr('y', -nodeHeight / 2)
-                .attr('rx', 6) // Slightly more rounded
+                .attr('rx', 6) 
                 .attr('ry', 6);
 
-            // 2. ForeignObject for HTML Content (Text Wrapping)
+            // Content
             nodeEnter.append('foreignObject')
                 .attr('width', nodeWidth)
                 .attr('height', nodeHeight)
@@ -351,8 +521,6 @@
                 .html(d => {
                     const role = d.data.name;
                     const person = d.data.head ? d.data.head : "";
-                    
-                    // Conditionally render person only if exists
                     let html = `<div class="node-role">${role}</div>`;
                     if (person) {
                         html += `<div class="node-person">${person}</div>`;
@@ -360,7 +528,7 @@
                     return html;
                 });
 
-            // 3. Circle Button (Expand/Collapse)
+            // Circle Toggle
             nodeEnter.append('circle')
                 .attr('class', 'node-circle')
                 .attr('r', 7)
@@ -368,25 +536,30 @@
                 .attr('cy', 0)
                 .style("opacity", d => (d._children || d.children) ? 1 : 0);
 
-            // UPDATE
             const nodeUpdate = node.merge(nodeEnter);
 
-            // Transition to the new position
             nodeUpdate.transition()
                 .duration(duration)
                 .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
 
-            // Style updates based on state
+            // Note: Colors are handled by CSS variables now, but specific SVG attributes need update for transition
+            // We use classes or simple selects, but D3 transitions on fill/stroke need explicit handling if variables change dynamically
+            // However, CSS variables handle the theme switch, D3 handles the structure.
+            // We just ensure the stroke changes based on collapse state.
+            
+            // Re-apply styles on update to catch collapse state changes
             nodeUpdate.select('rect')
-                .style("fill", "#FFF")
-                .style("stroke", d => d._children ? "#999" : "#E0E0E0");
+                // Note: The main colors come from CSS (.node rect), 
+                // but we need to set the stroke color for the collapsed state logic manually or via class.
+                // Using inline style for the collapse logic, but utilizing CSS vars.
+                .style("stroke", d => d._children ? "var(--node-stroke-collapsed)" : "var(--node-stroke)");
 
             nodeUpdate.select('circle.node-circle')
-                .style("fill", d => d._children ? "#ff6400" : "#FFF") // Red if closed
-                .style("stroke", d => d._children ? "#ff6400" : "#999")
+                .style("fill", d => d._children ? "var(--accent-color)" : "var(--node-bg)")
+                .style("stroke", d => d._children ? "var(--accent-color)" : "var(--node-stroke-collapsed)")
                 .style("opacity", d => (d._children || d.children) ? 1 : 0);
 
-            // EXIT
+
             const nodeExit = node.exit().transition()
                 .duration(duration)
                 .attr("transform", d => "translate(" + source.y + "," + source.x + ")")
@@ -396,7 +569,7 @@
             nodeExit.select('foreignObject').style('opacity', 0);
             nodeExit.select('circle').attr('opacity', 0);
 
-            // ****************** Links ******************
+            // Links
             const link = g.selectAll('path.link')
                 .data(links, d => d.target.id);
 
@@ -439,7 +612,6 @@
             }
 
             function click(event, d) {
-                // If the node has children (collapsed or expanded)
                 if (d.children || d._children) {
                     if (d.children) {
                         d._children = d.children;
