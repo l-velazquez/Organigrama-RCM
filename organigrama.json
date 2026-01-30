@@ -694,73 +694,284 @@
               {
                 "name": "Escuela de Medicina Dental",
                 "type": "school",
+                "head": "Lidia M. Guerrero, DMD, FACS",
+                "head_title": "Decana",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Departamento de Ciencias Restaurativas",
-                    "type": "department",
+                    "name": "SANUS PR",
+                    "type": "program",
+                    "head": "Dra. Elaine Págan",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Ayudante Ejecutivo de Decano para Administración",
+                    "type": "executive_assistant",
+                    "head": "Sr. Josué Vélez",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Centro de Informática y Recursos Educativos (CIRE)",
+                    "type": "office",
+                    "head": "Dr. Eliel Melón",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "División de Educación Continua y Estudios Profesionales",
+                    "type": "office",
+                    "head": "Dra. Lorna Rodriguez",
+                    "head_title": "Directora",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Presupuesto: Centro de Investigación UPR-EMD",
+                    "type": "office",
+                    "head": "Dr. Augusto Elías",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Decanato Asociado",
+                    "type": "executive_leadership",
+                    "head": "Dra. Arlene Sánchez",
+                    "head_title": "Decano Asociado Interino",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Odontología Operativa",
-                        "type": "division",
+                        "name": "Departamento de Ciencias Restaurativas",
+                        "type": "department",
+                        "head": "Dra. Dunia Rodríguez",
+                        "head_title": "Directora Interina",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Sección de Prostodoncia",
+                            "type": "division",
+                            "head": "Dra. Magda Prats",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Sección de Operativa",
+                            "type": "division",
+                            "head": "Dr. Rafael Portela",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Departamento de Ciencias Ecológicas",
+                        "type": "department",
+                        "head": "Dra. Carla D. Rodríguez",
+                        "head_title": "Directora Interina",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Sección de Orto-Pedo",
+                            "type": "division",
+                            "head": "Dra. Carla D. Rodríguez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Sección de Odontología Comunitaria",
+                            "type": "division",
+                            "head": "Dra. Alice Arroyo",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Departamento de Ciencias Quirúrgicas",
+                        "type": "department",
+                        "head": "Dra. Xiomara Rivera",
+                        "head_title": "Directora Interina",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Sección de Cirugía Oral",
+                            "type": "division",
+                            "head": "Dra. Elizabeth Orsini",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Sección de Biología Oral",
+                            "type": "division",
+                            "head": "Dr. Germán G. Salazar",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Sección de Ciencias Diagnósticas",
+                            "type": "division",
+                            "head": "Dra. Ginnette Izquierdo",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Sección de Endo-Perio",
+                            "type": "division",
+                            "head": "Dra. Teresa J. Irizarry",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Decanato Auxiliar para Educación Dental Graduada",
+                        "type": "deanery",
+                        "head": "Dra. Yolanda Heredia",
+                        "head_title": "Decana Auxiliar",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Cirugía Oral y Maxilofacial",
+                            "type": "program",
+                            "head": "Dr. Francisco L. Bermúdez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Residencia en Odontología General",
+                            "type": "program",
+                            "head": "Dra. Alice M. Arroyo",
+                            "head_title": "Directora Interina",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Decana Auxiliar Interina para Asuntos Académicos",
+                        "type": "deanery",
+                        "head": "Dra. Gianna N. Piovanetti",
+                        "head_title": "Decana Auxiliar Interina",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Oficina de Currículo",
+                            "type": "department",
+                            "head": "Dr. Evaristo Delgado",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Oficina de Avalúo Académico e Institucional",
+                            "type": "department",
+                            "head": "Dra. Gianna N. Piovanetti",
+                            "head_title": "Directora",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Oficina de Desarrollo de Facultad",
+                            "type": "department",
+                            "head": "Dra. Mitzy Perez",
+                            "head_title": "Directora",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Proyecto de Adquisicion de Instrumentos Dentales",
+                        "type": "project",
+                        "head": "Dra. Mitzy Perez",
+                        "head_title": "Directora"
+                      },
+                      {
+                        "name": "Decano Auxiliar para Investigación",
+                        "type": "deanery",
+                        "head": "Dr. Augusto Elías",
+                        "head_title": "Decano Auxiliar"
+                      },
+                      {
+                        "name": "Decana Auxiliar Interina para Talleres Cinicos",
+                        "type": "deanery",
+                        "head": "Dra. Najema Alí",
+                        "head_title": "Decana Auxiliar Interina",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Prostodoncia",
-                        "type": "division",
-                        "initial_collapsed": true
+                        "name": "Decana Auxiliar Interina para Asuntos Estudiantiles",
+                        "type": "deanery",
+                        "head": "Dra. Jocelyn A. Medina",
+                        "head_title": "Decana Auxiliar Interina",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Programa de Ubicación Avanzada",
+                            "type": "program",
+                            "head": "Dr. José R. Matos",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Decana Auxiliar para Educación Dental Graduada",
+                        "type": "deanery",
+                        "head": "Dra. Yolanda Heredia",
+                        "head_title": "Decana Auxiliar",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Sistema de Salud NYU Langone",
+                            "type": "program",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Endodoncia",
+                                "type": "program",
+                                "head": "Dr. Robert Goldberger",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Educación Avanzada en Odontología General",
+                                "type": "program",
+                                "head": "Dr. Addison Flores",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Cirugía Oral y Maxilofacial",
+                            "type": "program",
+                            "head": "Dr. Francisco L. Bermúdez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Odontopediatría",
+                            "type": "program",
+                            "head": "Dr. Emilio Agrait",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Ortodoncia",
+                            "type": "program",
+                            "head": "Dr. José A. Morales",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Prostodoncia",
+                            "type": "program",
+                            "head": "Dr. Arturo L. Blanco",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Residencia en Odontología General",
+                            "type": "program",
+                            "head": "Dra. Alice M. Arroyo",
+                            "head_title": "Directora Interina",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Periodoncia",
+                            "type": "program",
+                            "head": "Dr. Marcelino Negrón",
+                            "initial_collapsed": true
+                          }
+                        ]
                       }
                     ]
                   },
                   {
-                    "name": "Departamento de Ciencias Quirúrgicas",
-                    "type": "department",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Cirugía Oral",
-                        "type": "division",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Endodoncia / Periodoncia",
-                        "type": "division",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Ciencias Diagnósticas",
-                        "type": "division",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Biología Oral",
-                        "type": "division",
-                        "initial_collapsed": true
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Departamento de Ciencias Ecológicas",
-                    "type": "department",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Ortodoncia",
-                        "type": "division",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Odontopediatría",
-                        "type": "division",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Odontología Comunitaria",
-                        "type": "division",
-                        "initial_collapsed": true
-                      }
-                    ]
+                    "name": "Oficina de Desarrollo Institucional",
+                    "type": "office",
+                    "head": "Vacante",
+                    "initial_collapsed": true
                   }
                 ]
               },
