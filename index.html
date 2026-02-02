@@ -1,530 +1,726 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organigrama RCM</title>
-    
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3DNJQGN34"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Organigrama RCM</title>
 
-      gtag('config', 'G-H3DNJQGN34');
-    </script>
-    
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        /* --- SWISS DESIGN VARIABLES --- */
-        :root {
-            --bg-color: #F4F4F4; /* Light Grey Background */
-            --node-bg: #FFFFFF;
-            --text-primary: #1A1A1A;
-            --text-secondary: #757575;
-            --accent-color: #FF6400; /* Swiss Orange */
-            --line-color: #C0C0C0;
-            --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
+        <!-- FAVICONS -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="assets/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="assets/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="assets/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="assets/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="assets/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="assets/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="assets/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="assets/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="assets/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="assets/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon-16x16.png"
+        />
+        <link rel="manifest" href="assets/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="assets/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            font-family: var(--font-stack);
-            overflow: hidden;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        /* --- BLURRED HEADER CARD --- */
-        header {
-            position: fixed;
-            top: 24px;
-            left: 24px;
-            width: 380px;
-            padding: 20px;
-            z-index: 100;
-            
-            background-color: rgba(244, 244, 244, 0.75); 
-            backdrop-filter: blur(4px); 
-            -webkit-backdrop-filter: blur(4px); 
-            
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            pointer-events: none;
-            
-            display: flex;
-            align-items: center;
-            gap: 16px; 
-        }
-
-        /* --- NEW FOOTER STYLES --- */
-        footer {
-            position: fixed;
-            bottom: 24px;
-            right: 24px; /* Placed bottom right to balance the header */
-            padding: 12px 16px;
-            z-index: 100;
-            
-            /* Match Header Styling */
-            background-color: rgba(244, 244, 244, 0.75); 
-            backdrop-filter: blur(4px); 
-            -webkit-backdrop-filter: blur(4px); 
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end; /* Align text to the right */
-            gap: 4px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 11px;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-
-        footer a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s ease;
-        }
-
-        footer a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        /* Logo container */
-        .header-logo {
-            width: 60px;
-            height: 60px;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .header-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        /* Text container */
-        .header-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        h1 {
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 4px 0;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-            line-height: 1.2;
-        }
-
-        h2 {
-            font-size: 13px;
-            font-weight: 400;
-            margin: 0;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-
-        /* --- CHART STYLES --- */
-        svg {
-            width: 100%;
-            height: 100%;
-            cursor: grab;
-        }
-
-        svg:active {
-            cursor: grabbing;
-        }
-
-        /* The Node Container */
-        .node rect {
-            fill: var(--node-bg);
-            stroke: var(--line-color);
-            stroke-width: 1px;
-            transition: stroke 0.2s ease, filter 0.2s ease;
-        }
-
-        .node:hover rect {
-            stroke: var(--text-primary);
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
-        }
-
-        /* HTML Content inside Node (ForeignObject) */
-        .node-content-wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Vertically center */
-            padding: 0 16px; /* Horizontal padding */
-            box-sizing: border-box;
-            pointer-events: none; /* Let clicks pass through to the rect */
-        }
-
-        .node-role {
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-primary);
-            line-height: 1.25;
-            margin-bottom: 2px;
-            
-            /* Text Wrapping Logic */
-            white-space: normal; 
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3; /* Limit to 3 lines */
-            -webkit-box-orient: vertical;
-        }
-
-        .node-person {
-            font-size: 11px;
-            font-weight: 400;
-            color: var(--text-secondary);
-            margin-top: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* Expand/Collapse Button */
-        .node-circle {
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .node-circle:hover {
-            transform: scale(1.2);
-        }
-
-        .link {
-            fill: none;
-            stroke: var(--line-color);
-            stroke-width: 1.5px;
-        }
-
-        /* --- UTILS --- */
-        #loading {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 14px;
-            color: var(--text-secondary);
-        }
-
-        #error-msg {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 30px;
-            border-left: 4px solid var(--accent-color);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            max-width: 400px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="header-logo">
-            <img src="assets/logos/RCM-UPR-logo.svg" alt="RCM Logo">
-        </div>
-        <div class="header-text">
-            <h1>Recinto de Ciencias Médicas</h1>
-            <h2>Estructura Organizacional Académica y Administrativa</h2>
-        </div>
-    </header>
-
-    <!-- NEW FOOTER -->
-    <footer>
-        <p>Última actualización: <span id="last-updated">Cargando...</span></p>
-    </footer>
-
-    <div id="loading">Cargando visualización...</div>
-    
-    <div id="error-msg">
-        <h3>Error de conexión</h3>
-        <p>No se pudo cargar 'organigrama.json'.</p>
-        <p style="font-size: 12px; color: #666;">Asegúrese de ejecutar este archivo usando un servidor local.</p>
-    </div>
-
-    <div id="chart"></div>
-
-    <script>
-        // --- GITHUB UPDATE DATE LOGIC ---
-        // This fetches the last commit date from your repository automatically
-        const repoOwner = 'l-velazquez';
-        const repoName = 'Organigrama-RCM';
-        const branchName = 'main';
-        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/branches/${branchName}`;
-
-        fetch(apiUrl)
-            .then(response => {
-                if (!response.ok) throw new Error("GitHub API Error");
-                return response.json();
-            })
-            .then(data => {
-                // Get date from the commit
-                const dateString = data.commit.commit.author.date;
-                const dateObj = new Date(dateString);
-                
-                // Format date (e.g., 24 de enero de 2024)
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const formattedDate = dateObj.toLocaleDateString('es-ES', options);
-                
-                document.getElementById('last-updated').textContent = formattedDate;
-            })
-            .catch(error => {
-                console.warn("Could not fetch GitHub date:", error);
-                // Fallback text if API fails (or limit reached)
-                document.getElementById('last-updated').textContent = "No disponible";
-            });
-
-
-        // --- CONFIGURATION ---
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        const duration = 600; 
-        
-        // Increased sizes for text wrapping
-        const nodeWidth = 240; 
-        const nodeHeight = 85; 
-        
-        // --- SVG SETUP ---
-        const svg = d3.select("#chart").append("svg")
-            .attr("width", width)
-            .attr("height", height)
-            .call(d3.zoom().scaleExtent([0.1, 2]).on("zoom", (event) => {
-                g.attr("transform", event.transform);
-            }))
-            .append("g")
-            .attr("transform", "translate(150, " + (height / 2) + ")"); 
-
-        const g = svg.append("g");
-
-        // --- TREE LAYOUT ---
-        const treeMap = d3.tree().nodeSize([nodeHeight + 30, nodeWidth + 80]);
-
-        let i = 0;
-        let root;
-
-        // --- LOAD DATA ---
-        d3.json("organigrama.json")
-            .then(data => {
-                document.getElementById('loading').style.display = 'none';
-
-                const rawRoot = data.organization.structure.rectoria;
-                const processedData = formatData(rawRoot);
-
-                root = d3.hierarchy(processedData, d => d.children);
-                root.x0 = height / 2;
-                root.y0 = 0;
-
-                // Handle initial collapsed state from JSON
-                root.descendants().forEach(d => {
-                    if (d.data.initial_collapsed && d.children) {
-                        d._children = d.children;
-                        d.children = null;
-                    }
-                });
-
-                update(root);
-            })
-            .catch(error => {
-                console.error(error);
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('error-msg').style.display = 'block';
-            });
-
-        function formatData(node) {
-            let newNode = { ...node };
-            if (newNode.sub_elements) {
-                newNode.children = newNode.sub_elements.map(formatData);
-                delete newNode.sub_elements;
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-H3DNJQGN34"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
-            return newNode;
-        }
+            gtag("js", new Date());
+            gtag("config", "G-H3DNJQGN34");
+        </script>
 
-        // --- RENDER FUNCTION ---
-        function update(source) {
-            const treeData = treeMap(root);
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <style>
+            :root {
+                --bg-color: #f4f4f4;
+                --node-bg: #ffffff;
+                --text-primary: #1a1a1a;
+                --text-secondary: #757575;
+                --accent-color: #ff6400;
+                --line-color: #c0c0c0;
+                --font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
 
-            // Compute the new tree layout
-            const nodes = treeData.descendants();
-            const links = treeData.links();
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: var(--bg-color);
+                font-family: var(--font-stack);
+                overflow: hidden;
+                width: 100vw;
+                height: 100vh;
+            }
 
-            // Fixed-depth positioning (Horizontal)
-            nodes.forEach(d => { d.y = d.depth * 320; });
+            /* Shared frosted glass style */
+            .glass-panel {
+                background-color: rgba(244, 244, 244, 0.75);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 8px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            }
 
-            // ****************** Nodes ******************
-            const node = g.selectAll('g.node')
-                .data(nodes, d => d.id || (d.id = ++i));
+            header {
+                position: fixed;
+                top: 24px;
+                left: 24px;
+                width: 380px;
+                padding: 20px;
+                z-index: 100;
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
 
-            // Enter new nodes at the parent's previous position
-            const nodeEnter = node.enter().append('g')
-                .attr('class', 'node')
-                .attr("transform", d => "translate(" + source.y0 + "," + source.x0 + ")")
-                .on('click', click);
+            footer {
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                padding: 12px 16px;
+                z-index: 100;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 4px;
+            }
 
-            // 1. Rectangle Background
-            nodeEnter.append('rect')
-                .attr('width', nodeWidth)
-                .attr('height', nodeHeight)
-                .attr('x', 0)
-                .attr('y', -nodeHeight / 2)
-                .attr('rx', 6) 
-                .attr('ry', 6);
+            footer p {
+                margin: 0;
+                font-size: 11px;
+                color: var(--text-secondary);
+                line-height: 1.4;
+            }
 
-            // 2. ForeignObject for HTML Content (Text Wrapping)
-            nodeEnter.append('foreignObject')
-                .attr('width', nodeWidth)
-                .attr('height', nodeHeight)
-                .attr('x', 0)
-                .attr('y', -nodeHeight / 2)
-                .append('xhtml:div')
-                .attr('class', 'node-content-wrapper')
-                .html(d => {
-                    const role = d.data.name;
-                    const person = d.data.head ? d.data.head : "";
-                    
-                    // Conditionally render person only if exists
-                    let html = `<div class="node-role">${role}</div>`;
-                    if (person) {
-                        html += `<div class="node-person">${person}</div>`;
-                    }
-                    return html;
+            footer a {
+                color: var(--text-primary);
+                text-decoration: none;
+                font-weight: 600;
+                transition: color 0.2s ease;
+            }
+
+            footer a:hover {
+                color: var(--accent-color);
+                text-decoration: underline;
+            }
+
+            .header-logo {
+                width: 60px;
+                height: 60px;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .header-logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .header-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0 0 4px 0;
+                color: var(--text-primary);
+                letter-spacing: -0.01em;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 13px;
+                font-weight: 400;
+                margin: 0;
+                color: var(--text-secondary);
+                line-height: 1.4;
+            }
+
+            /* Language Toggle */
+            .lang-toggle {
+                position: fixed;
+                top: 24px;
+                right: 24px;
+                padding: 6px;
+                z-index: 100;
+                display: flex;
+                gap: 4px;
+            }
+
+            .lang-btn {
+                padding: 8px 14px;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: var(--font-stack);
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                background: transparent;
+                color: var(--text-secondary);
+            }
+
+            .lang-btn:hover {
+                color: var(--text-primary);
+            }
+
+            .lang-btn.active {
+                background: var(--text-primary);
+                color: var(--node-bg);
+            }
+
+            /* Chart styles */
+            svg {
+                width: 100%;
+                height: 100%;
+                cursor: grab;
+            }
+
+            svg:active {
+                cursor: grabbing;
+            }
+
+            .node rect {
+                fill: var(--node-bg);
+                stroke: var(--line-color);
+                stroke-width: 1px;
+                transition:
+                    stroke 0.2s ease,
+                    filter 0.2s ease;
+            }
+
+            .node:hover rect {
+                stroke: var(--text-primary);
+                filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+            }
+
+            .node-content-wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 16px;
+                box-sizing: border-box;
+                pointer-events: none;
+            }
+
+            .node-role {
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--text-primary);
+                line-height: 1.25;
+                margin-bottom: 2px;
+                white-space: normal;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            .node-person {
+                font-size: 11px;
+                font-weight: 400;
+                color: var(--text-secondary);
+                margin-top: 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .node-circle {
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .node-circle:hover {
+                transform: scale(1.2);
+            }
+
+            .link {
+                fill: none;
+                stroke: var(--line-color);
+                stroke-width: 1.5px;
+            }
+
+            #loading {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 14px;
+                color: var(--text-secondary);
+            }
+
+            #error-msg {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 30px;
+                border-left: 4px solid var(--accent-color);
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="glass-panel">
+            <div class="header-logo">
+                <img src="assets/logos/RCM-UPR-logo.svg" alt="RCM Logo" />
+            </div>
+            <div class="header-text">
+                <h1 id="header-title">Recinto de Ciencias Médicas</h1>
+                <h2 id="header-subtitle">
+                    Estructura Organizacional Académica y Administrativa
+                </h2>
+            </div>
+        </header>
+
+        <nav class="lang-toggle glass-panel">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </nav>
+
+        <footer class="glass-panel">
+            <p>
+                <span id="update-label">Última actualización:</span>
+                <span id="last-updated">Cargando...</span>
+            </p>
+        </footer>
+
+        <div id="loading">Cargando visualización...</div>
+
+        <div id="error-msg">
+            <h3 id="error-title">Error de conexión</h3>
+            <p id="error-text">No se pudo cargar los datos.</p>
+            <p style="font-size: 12px; color: #666" id="error-hint">
+                Asegúrese de ejecutar este archivo usando un servidor local.
+            </p>
+        </div>
+
+        <div id="chart"></div>
+
+        <script>
+            // --- I18N CONFIG ---
+            const i18n = {
+                es: {
+                    title: "Recinto de Ciencias Médicas",
+                    subtitle:
+                        "Estructura Organizacional Académica y Administrativa",
+                    updateLabel: "Última actualización:",
+                    loading: "Cargando visualización...",
+                    notAvailable: "No disponible",
+                    errorTitle: "Error de conexión",
+                    errorText: "No se pudo cargar los datos.",
+                    errorHint:
+                        "Asegúrese de ejecutar este archivo usando un servidor local.",
+                    dataFile: "organigrama.json",
+                    dateLocale: "es-ES",
+                },
+                en: {
+                    title: "Medical Sciences Campus",
+                    subtitle:
+                        "Academic and Administrative Organizational Structure",
+                    updateLabel: "Last updated:",
+                    loading: "Loading visualization...",
+                    notAvailable: "Not available",
+                    errorTitle: "Connection Error",
+                    errorText: "Could not load data.",
+                    errorHint:
+                        "Make sure to run this file using a local server.",
+                    dataFile: "organizational-diagram.json",
+                    dateLocale: "en-US",
+                },
+            };
+
+            let currentLang = localStorage.getItem("orgchart-lang") || "es";
+
+            // --- LANGUAGE FUNCTIONS ---
+            function updateUIText(lang) {
+                const t = i18n[lang];
+                document.documentElement.lang = lang;
+                document.getElementById("header-title").textContent = t.title;
+                document.getElementById("header-subtitle").textContent =
+                    t.subtitle;
+                document.getElementById("update-label").textContent =
+                    t.updateLabel;
+                document.getElementById("loading").textContent = t.loading;
+                document.getElementById("error-title").textContent =
+                    t.errorTitle;
+                document.getElementById("error-text").textContent = t.errorText;
+                document.getElementById("error-hint").textContent = t.errorHint;
+
+                document.querySelectorAll(".lang-btn").forEach((btn) => {
+                    btn.classList.toggle("active", btn.dataset.lang === lang);
                 });
+            }
 
-            // 3. Circle Button (Expand/Collapse)
-            nodeEnter.append('circle')
-                .attr('class', 'node-circle')
-                .attr('r', 7)
-                .attr('cx', nodeWidth)
-                .attr('cy', 0)
-                .style("opacity", d => (d._children || d.children) ? 1 : 0);
+            function setLanguage(lang) {
+                currentLang = lang;
+                localStorage.setItem("orgchart-lang", lang);
+                updateUIText(lang);
+                loadData();
+                fetchGitHubDate();
+            }
 
-            // UPDATE
-            const nodeUpdate = node.merge(nodeEnter);
-
-            // Transition to the new position
-            nodeUpdate.transition()
-                .duration(duration)
-                .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
-
-            // Style updates based on state
-            nodeUpdate.select('rect')
-                .style("fill", "#FFF")
-                .style("stroke", d => d._children ? "#999" : "#E0E0E0");
-
-            nodeUpdate.select('circle.node-circle')
-                .style("fill", d => d._children ? "#FF6400" : "#FFF") // Red if closed
-                .style("stroke", d => d._children ? "#FF6400" : "#999")
-                .style("opacity", d => (d._children || d.children) ? 1 : 0);
-
-            // EXIT
-            const nodeExit = node.exit().transition()
-                .duration(duration)
-                .attr("transform", d => "translate(" + source.y + "," + source.x + ")")
-                .remove();
-
-            nodeExit.select('rect').attr('fill-opacity', 0);
-            nodeExit.select('foreignObject').style('opacity', 0);
-            nodeExit.select('circle').attr('opacity', 0);
-
-            // ****************** Links ******************
-            const link = g.selectAll('path.link')
-                .data(links, d => d.target.id);
-
-            const linkEnter = link.enter().insert('path', "g")
-                .attr("class", "link")
-                .attr('d', d => {
-                    const o = { x: source.x0, y: source.y0 };
-                    return diagonal(o, o);
-                });
-
-            const linkUpdate = link.merge(linkEnter);
-
-            linkUpdate.transition()
-                .duration(duration)
-                .attr('d', d => diagonal(d.source, d.target));
-
-            link.exit().transition()
-                .duration(duration)
-                .attr('d', d => {
-                    const o = { x: source.x, y: source.y };
-                    return diagonal(o, o);
-                })
-                .remove();
-
-            nodes.forEach(d => {
-                d.x0 = d.x;
-                d.y0 = d.y;
+            // Language toggle event
+            document.querySelectorAll(".lang-btn").forEach((btn) => {
+                btn.addEventListener("click", () =>
+                    setLanguage(btn.dataset.lang),
+                );
             });
 
-            function diagonal(s, d) {
-                const sourceX = s.y + nodeWidth;
-                const sourceY = s.x;
-                const targetX = d.y;
-                const targetY = d.x;
+            // --- GITHUB UPDATE DATE ---
+            const repoOwner = "l-velazquez";
+            const repoName = "Organigrama-RCM";
+            const branchName = "main";
+            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/branches/${branchName}`;
 
-                return `M ${sourceX} ${sourceY}
+            function fetchGitHubDate() {
+                fetch(apiUrl)
+                    .then((response) => {
+                        if (!response.ok) throw new Error("GitHub API Error");
+                        return response.json();
+                    })
+                    .then((data) => {
+                        const dateObj = new Date(
+                            data.commit.commit.author.date,
+                        );
+                        const options = {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        };
+                        const formattedDate = dateObj.toLocaleDateString(
+                            i18n[currentLang].dateLocale,
+                            options,
+                        );
+                        document.getElementById("last-updated").textContent =
+                            formattedDate;
+                    })
+                    .catch(() => {
+                        document.getElementById("last-updated").textContent =
+                            i18n[currentLang].notAvailable;
+                    });
+            }
+
+            // --- CHART CONFIG ---
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const duration = 600;
+            const nodeWidth = 240;
+            const nodeHeight = 85;
+
+            const svg = d3
+                .select("#chart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .call(
+                    d3
+                        .zoom()
+                        .scaleExtent([0.1, 2])
+                        .on("zoom", (event) => {
+                            g.attr("transform", event.transform);
+                        }),
+                )
+                .append("g")
+                .attr("transform", "translate(150, " + height / 2 + ")");
+
+            const g = svg.append("g");
+            const treeMap = d3
+                .tree()
+                .nodeSize([nodeHeight + 30, nodeWidth + 80]);
+
+            let i = 0;
+            let root;
+
+            // --- LOAD DATA ---
+            function loadData() {
+                // Clear existing chart
+                g.selectAll("*").remove();
+                i = 0;
+
+                document.getElementById("loading").style.display = "block";
+                document.getElementById("error-msg").style.display = "none";
+
+                d3.json(i18n[currentLang].dataFile)
+                    .then((data) => {
+                        document.getElementById("loading").style.display =
+                            "none";
+
+                        const rawRoot = data.organization.structure.rectoria;
+                        const processedData = formatData(rawRoot);
+
+                        root = d3.hierarchy(processedData, (d) => d.children);
+                        root.x0 = height / 2;
+                        root.y0 = 0;
+
+                        root.descendants().forEach((d) => {
+                            if (d.data.initial_collapsed && d.children) {
+                                d._children = d.children;
+                                d.children = null;
+                            }
+                        });
+
+                        update(root);
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        document.getElementById("loading").style.display =
+                            "none";
+                        document.getElementById("error-msg").style.display =
+                            "block";
+                    });
+            }
+
+            function formatData(node) {
+                let newNode = { ...node };
+                if (newNode.sub_elements) {
+                    newNode.children = newNode.sub_elements.map(formatData);
+                    delete newNode.sub_elements;
+                }
+                return newNode;
+            }
+
+            function update(source) {
+                const treeData = treeMap(root);
+                const nodes = treeData.descendants();
+                const links = treeData.links();
+
+                nodes.forEach((d) => {
+                    d.y = d.depth * 320;
+                });
+
+                const node = g
+                    .selectAll("g.node")
+                    .data(nodes, (d) => d.id || (d.id = ++i));
+
+                const nodeEnter = node
+                    .enter()
+                    .append("g")
+                    .attr("class", "node")
+                    .attr(
+                        "transform",
+                        (d) => "translate(" + source.y0 + "," + source.x0 + ")",
+                    )
+                    .on("click", click);
+
+                nodeEnter
+                    .append("rect")
+                    .attr("width", nodeWidth)
+                    .attr("height", nodeHeight)
+                    .attr("x", 0)
+                    .attr("y", -nodeHeight / 2)
+                    .attr("rx", 6)
+                    .attr("ry", 6);
+
+                nodeEnter
+                    .append("foreignObject")
+                    .attr("width", nodeWidth)
+                    .attr("height", nodeHeight)
+                    .attr("x", 0)
+                    .attr("y", -nodeHeight / 2)
+                    .append("xhtml:div")
+                    .attr("class", "node-content-wrapper")
+                    .html((d) => {
+                        const role = d.data.name;
+                        const person = d.data.head || "";
+                        let html = `<div class="node-role">${role}</div>`;
+                        if (person) {
+                            html += `<div class="node-person">${person}</div>`;
+                        }
+                        return html;
+                    });
+
+                nodeEnter
+                    .append("circle")
+                    .attr("class", "node-circle")
+                    .attr("r", 7)
+                    .attr("cx", nodeWidth)
+                    .attr("cy", 0)
+                    .style("opacity", (d) =>
+                        d._children || d.children ? 1 : 0,
+                    );
+
+                const nodeUpdate = node.merge(nodeEnter);
+
+                nodeUpdate
+                    .transition()
+                    .duration(duration)
+                    .attr(
+                        "transform",
+                        (d) => "translate(" + d.y + "," + d.x + ")",
+                    );
+
+                nodeUpdate
+                    .select("rect")
+                    .style("fill", "#FFF")
+                    .style("stroke", (d) => (d._children ? "#999" : "#E0E0E0"));
+
+                nodeUpdate
+                    .select("circle.node-circle")
+                    .style("fill", (d) => (d._children ? "#FF6400" : "#FFF"))
+                    .style("stroke", (d) => (d._children ? "#FF6400" : "#999"))
+                    .style("opacity", (d) =>
+                        d._children || d.children ? 1 : 0,
+                    );
+
+                const nodeExit = node
+                    .exit()
+                    .transition()
+                    .duration(duration)
+                    .attr(
+                        "transform",
+                        (d) => "translate(" + source.y + "," + source.x + ")",
+                    )
+                    .remove();
+
+                nodeExit.select("rect").attr("fill-opacity", 0);
+                nodeExit.select("foreignObject").style("opacity", 0);
+                nodeExit.select("circle").attr("opacity", 0);
+
+                const link = g
+                    .selectAll("path.link")
+                    .data(links, (d) => d.target.id);
+
+                const linkEnter = link
+                    .enter()
+                    .insert("path", "g")
+                    .attr("class", "link")
+                    .attr("d", (d) => {
+                        const o = { x: source.x0, y: source.y0 };
+                        return diagonal(o, o);
+                    });
+
+                const linkUpdate = link.merge(linkEnter);
+
+                linkUpdate
+                    .transition()
+                    .duration(duration)
+                    .attr("d", (d) => diagonal(d.source, d.target));
+
+                link.exit()
+                    .transition()
+                    .duration(duration)
+                    .attr("d", (d) => {
+                        const o = { x: source.x, y: source.y };
+                        return diagonal(o, o);
+                    })
+                    .remove();
+
+                nodes.forEach((d) => {
+                    d.x0 = d.x;
+                    d.y0 = d.y;
+                });
+
+                function diagonal(s, d) {
+                    const sourceX = s.y + nodeWidth;
+                    const sourceY = s.x;
+                    const targetX = d.y;
+                    const targetY = d.x;
+
+                    return `M ${sourceX} ${sourceY}
                         C ${(sourceX + targetX) / 2} ${sourceY},
                           ${(sourceX + targetX) / 2} ${targetY},
                           ${targetX} ${targetY}`;
-            }
+                }
 
-            function click(event, d) {
-                // If the node has children (collapsed or expanded)
-                if (d.children || d._children) {
-                    if (d.children) {
-                        d._children = d.children;
-                        d.children = null;
-                    } else {
-                        d.children = d._children;
-                        d._children = null;
+                function click(event, d) {
+                    if (d.children || d._children) {
+                        if (d.children) {
+                            d._children = d.children;
+                            d.children = null;
+                        } else {
+                            d.children = d._children;
+                            d._children = null;
+                        }
+                        update(d);
                     }
-                    update(d);
                 }
             }
-        }
-    </script>
-</body>
+
+            // --- INIT ---
+            updateUIText(currentLang);
+            loadData();
+            fetchGitHubDate();
+        </script>
+    </body>
 </html>

@@ -1,0 +1,1626 @@
+{
+  "organization": {
+    "name": "Medical Sciences Campus (MSC)",
+    "type": "academic_medical_institution",
+    "structure": {
+      "rectoria": {
+        "name": "Chancellor's Office",
+        "type": "executive_leadership",
+        "initial_collapsed": false,
+        "sub_elements": [
+          {
+            "name": "Deanship of Academic Affairs",
+            "type": "deanery",
+            "head": "Yasmín Pedrogo Rodríguez, MD, FAAP, MEdL",
+            "head_title": "Dean",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Associate Dean",
+                "type": "leadership",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administration Office",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Teaching and Research Assistance Program",
+                    "type": "program",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Institute of Neurobiology",
+                    "type": "research_institute",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Graduate Research Initiative for Student Enhancement (G-RISE)",
+                    "type": "research_program",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Puerto Rico Health Sciences Journal (PRHSJ)",
+                    "type": "journal",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Mentoring Institute for HIV and Mental Health Research (MI-HMHR)",
+                    "type": "research_institute",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Office of Academic Development",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Registrar's Office",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Central Division of Continuing Education and Professional Studies",
+                    "type": "division",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Office of Institutional Research, Planning, and Evaluation",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Conrado F. Asenjo Library",
+                    "type": "library",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Center for Technological Support in Academia",
+                    "type": "center",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "AIDS Education and Training Center",
+                    "type": "center",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "MSC Online Division",
+                    "type": "division",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Accreditation and Licensing",
+                "type": "office",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Continuous Quality Improvement Committee (CQI)",
+                    "type": "committee",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Research Centers in Minority Institutions (RCMI) Program",
+                "type": "research_program",
+                "head": "Emma Fernández-Repollet, PhD",
+                "head_title": "Director",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Behavioral Sciences Research Institute",
+                "type": "research_institute",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Title V Project",
+                "type": "program",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Eugenio María de Hostos Bioethics Institute",
+                "type": "institute",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Center for Women and Health",
+                "type": "center",
+                "initial_collapsed": true
+              }
+            ]
+          },
+          {
+            "name": "Deanship of Research",
+            "type": "deanery",
+            "head": "Annabell C. Segarra Marrero",
+            "head_title": "Dean",
+            "initial_collapsed": true
+          },
+          {
+            "name": "Deanship of Students",
+            "type": "deanery",
+            "head": "Edna Pacheco Acosta, DrPH, MSc",
+            "head_title": "Dean",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Office of the Dean of Students",
+                "type": "office",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Executive Secretary I",
+                    "type": "position",
+                    "head": "Jussett Vega Vega",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Associate Dean of Students",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Administration",
+                "type": "department",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Special Assistant to the Dean - Administrative Affairs",
+                    "type": "position",
+                    "head": "Carmen I. Rivera Lozada",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Administrative Assistant IV",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Messenger II",
+                    "type": "position",
+                    "head": "Héctor Meléndez",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Admissions",
+                "type": "office",
+                "head": "Maribel Ortiz",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administrative Secretary II",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Admissions Officer II",
+                    "type": "position",
+                    "head": "Janette Carrasquillo",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Admissions Officer II",
+                    "type": "position",
+                    "head": "Vilma Santiago",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Admissions Officer III",
+                    "type": "position",
+                    "head": "Raiza Hidalgo",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Admissions Officer III",
+                    "type": "position",
+                    "head": "Ruth Rivera Rolón",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Admissions Officer III",
+                    "type": "position",
+                    "head": "Yuliana Santiago",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Student Counseling and Psychology Center (CECSI)",
+                "type": "center",
+                "head": "Frank Valentín Silva",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administrative Secretary II",
+                    "type": "position",
+                    "head": "Wendy Guzmán Hernaiz",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Counselor III",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Counselor III",
+                    "type": "position",
+                    "head": "Carlos Cañuelas",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Counselor III",
+                    "type": "position",
+                    "head": "Maribel Pagán",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Psychologist III",
+                    "type": "position",
+                    "head": "María M Hernández",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Student Medical Services",
+                "type": "service",
+                "head": "Sohé Berríos Díaz",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "General Nurse",
+                    "type": "position",
+                    "head": "Carolyn Domínguez",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Administrative Secretary II",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Financial Aid",
+                "type": "office",
+                "head": "Yolanda Rivera Rolón",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administrative Secretary II",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Financial Aid Officer IV",
+                    "type": "position",
+                    "head": "Juan Burgos",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Financial Aid Officer III",
+                    "type": "position",
+                    "head": "Lymari Vélez",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Financial Aid Officer II",
+                    "type": "position",
+                    "head": "Leyda Márquez",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Information Technology Technician",
+                    "type": "position",
+                    "head": "Omar Santiago",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Online Systems Data Registrar I",
+                    "type": "position",
+                    "head": "Efraín Rosario",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Student Promotion and Recruitment",
+                "type": "office",
+                "head": "Sohé Berríos Díaz",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administrative Assistant III",
+                    "type": "position",
+                    "head": "Johanna Rosario",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Office of Services for Students with Disabilities (OSEI)",
+                "type": "office",
+                "head": "Yeraldin Valerio González",
+                "head_title": "Director",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Administrative Assistant II",
+                    "type": "position",
+                    "head": "Terie Rey Berríos",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "Quality of Life Program",
+                "type": "program",
+                "head": "Vilma Santiago",
+                "head_title": "Coordinator",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Sports Activities Coordinator",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "General Student Council",
+                "type": "council",
+                "head": "Frank Valentín Silva",
+                "head_title": "Advisor",
+                "initial_collapsed": true
+              }
+            ]
+          },
+          {
+            "name": "Deanship of Administration",
+            "type": "deanery",
+            "head": "María M. Santiago Morales",
+            "head_title": "Dean",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Human Capital Management",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Finance Department",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Physical Resources Department",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Office of Construction Planning and Design",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Purchasing and Supplies Office",
+                "type": "office",
+                "initial_collapsed": true
+              }
+            ]
+          },
+          {
+            "name": "Academic Units",
+            "type": "academic_divisions",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "School of Medicine",
+                "type": "school",
+                "head": "Deborah H. Silva, MD, FAAP, MEd",
+                "head_title": "Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Basic Sciences Departments",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Microbiology and Medical Zoology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Pharmacology and Toxicology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Biochemistry",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Anatomy and Neurobiology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Physiology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Clinical Departments",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Anesthesiology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Dermatology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Family Medicine",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Obstetrics and Gynecology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Pathology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Physical Medicine, Rehabilitation, and Sports Health",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Surgery",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Neurosurgery",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Urology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Orthopedics",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Otorhinolaryngology, Head and Neck",
+                            "type": "division",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Emergency Medicine",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Internal Medicine",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Cardiology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Endocrinology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Gastroenterology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Geriatrics",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Hematology and Oncology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Infectious Diseases",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "General Medicine",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Rheumatology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Nephrology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Neurology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Pneumology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Ophthalmology",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Pediatrics",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "General Pediatrics",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Cardiology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Endocrinology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Infectious Diseases",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Gastroenterology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Hematology and Oncology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Neurology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Nephrology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Neonatology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Genetics",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Pneumology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Intensive Care",
+                            "type": "division",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Rheumatology",
+                            "type": "division",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Psychiatry",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Radiological Sciences",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "School of Dental Medicine",
+                "type": "school",
+                "head": "Lidia M. Guerrero, DMD, FACS",
+                "head_title": "Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "SANUS PR",
+                    "type": "program",
+                    "head": "Dr. Elaine Págan",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Executive Assistant to the Dean for Administration",
+                    "type": "executive_assistant",
+                    "head": "Mr. Josué Vélez",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Center for Informatics and Educational Resources (CIRE)",
+                    "type": "office",
+                    "head": "Dr. Eliel Melón",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Division of Continuing Education and Professional Studies",
+                    "type": "office",
+                    "head": "Dr. Lorna Rodriguez",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Budget: UPR-SDM Research Center",
+                    "type": "office",
+                    "head": "Dr. Augusto Elías",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Associate Deanship",
+                    "type": "executive_leadership",
+                    "head": "Dr. Arlene Sánchez",
+                    "head_title": "Interim Associate Dean",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Department of Restorative Sciences",
+                        "type": "department",
+                        "head": "Dr. Dunia Rodríguez",
+                        "head_title": "Interim Director",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Prosthodontics Section",
+                            "type": "division",
+                            "head": "Dr. Magda Prats",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Operative Section",
+                            "type": "division",
+                            "head": "Dr. Rafael Portela",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Department of Ecological Sciences",
+                        "type": "department",
+                        "head": "Dr. Carla D. Rodríguez",
+                        "head_title": "Interim Director",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Ortho-Pedo Section",
+                            "type": "division",
+                            "head": "Dr. Carla D. Rodríguez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Community Dentistry Section",
+                            "type": "division",
+                            "head": "Dr. Alice Arroyo",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Department of Surgical Sciences",
+                        "type": "department",
+                        "head": "Dr. Xiomara Rivera",
+                        "head_title": "Interim Director",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Oral Surgery Section",
+                            "type": "division",
+                            "head": "Dr. Elizabeth Orsini",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Oral Biology Section",
+                            "type": "division",
+                            "head": "Dr. Germán G. Salazar",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Diagnostic Sciences Section",
+                            "type": "division",
+                            "head": "Dr. Ginnette Izquierdo",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Endo-Perio Section",
+                            "type": "division",
+                            "head": "Dr. Teresa J. Irizarry",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Assistant Deanship for Graduate Dental Education",
+                        "type": "deanery",
+                        "head": "Dr. Yolanda Heredia",
+                        "head_title": "Assistant Dean",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Oral and Maxillofacial Surgery",
+                            "type": "program",
+                            "head": "Dr. Francisco L. Bermúdez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Residency in General Dentistry",
+                            "type": "program",
+                            "head": "Dr. Alice M. Arroyo",
+                            "head_title": "Interim Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Interim Assistant Deanship for Academic Affairs",
+                        "type": "deanery",
+                        "head": "Dr. Gianna N. Piovanetti",
+                        "head_title": "Interim Assistant Dean",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Office of Curriculum",
+                            "type": "department",
+                            "head": "Dr. Evaristo Delgado",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Office of Academic and Institutional Assessment",
+                            "type": "department",
+                            "head": "Dr. Gianna N. Piovanetti",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Office of Faculty Development",
+                            "type": "department",
+                            "head": "Dr. Mitzy Perez",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Dental Instrument Acquisition Project",
+                        "type": "project",
+                        "head": "Dr. Mitzy Perez",
+                        "head_title": "Director"
+                      },
+                      {
+                        "name": "Assistant Dean for Research",
+                        "type": "deanery",
+                        "head": "Dr. Augusto Elías",
+                        "head_title": "Assistant Dean"
+                      },
+                      {
+                        "name": "Interim Assistant Deanship for Clinical Workshops",
+                        "type": "deanery",
+                        "head": "Dr. Najema Alí",
+                        "head_title": "Interim Assistant Dean",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Interim Assistant Deanship for Student Affairs",
+                        "type": "deanery",
+                        "head": "Dr. Jocelyn A. Medina",
+                        "head_title": "Interim Assistant Dean",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Advanced Placement Program",
+                            "type": "program",
+                            "head": "Dr. José R. Matos",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Assistant Deanship for Graduate Dental Education",
+                        "type": "deanery",
+                        "head": "Dr. Yolanda Heredia",
+                        "head_title": "Assistant Dean",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "NYU Langone Health System",
+                            "type": "program",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Endodontics",
+                                "type": "program",
+                                "head": "Dr. Robert Goldberger",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Advanced Education in General Dentistry",
+                                "type": "program",
+                                "head": "Dr. Addison Flores",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Oral and Maxillofacial Surgery",
+                            "type": "program",
+                            "head": "Dr. Francisco L. Bermúdez",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Pediatric Dentistry",
+                            "type": "program",
+                            "head": "Dr. Emilio Agrait",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Orthodontics",
+                            "type": "program",
+                            "head": "Dr. José A. Morales",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Prosthodontics",
+                            "type": "program",
+                            "head": "Dr. Arturo L. Blanco",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Residency in General Dentistry",
+                            "type": "program",
+                            "head": "Dr. Alice M. Arroyo",
+                            "head_title": "Interim Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Periodontics",
+                            "type": "program",
+                            "head": "Dr. Marcelino Negrón",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Office of Institutional Development",
+                    "type": "office",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "School of Nursing",
+                "type": "school",
+                "head": "Sherily Pereira Morales",
+                "head_title": "Interim Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Associate Dean of Academic Affairs",
+                    "type": "leadership",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Academic Department Director",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Academic Programs",
+                        "type": "program_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Bachelor of Science in Nursing (BSN)",
+                            "type": "degree_program",
+                            "head": "Vacante",
+                            "head_title": "BSN Program Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Master of Science in Nursing (MSN)",
+                            "type": "degree_program",
+                            "head": "Vacante",
+                            "head_title": "MSN Program Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Doctor of Nursing Practice with Specialty in Anesthesia (DNP-SA)",
+                            "type": "degree_program",
+                            "head": "Vacante",
+                            "head_title": "DNP-SA Program Director",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Assistant Director of DNP-SA Program",
+                                "type": "position",
+                                "head": "Vacante",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Doctor of Philosophy in Nursing (Ph.D.)",
+                            "type": "degree_program",
+                            "head": "Vacante",
+                            "head_title": "Ph.D. Program Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Director of Evaluation Office",
+                        "type": "department",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Director of Nursing Simulation Center",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Nursing Simulation Center Coordinator",
+                            "type": "position",
+                            "head": "Vacante",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Clinical Coordinator",
+                        "type": "position",
+                        "head": "Vacante",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Director of Continuing Education and Professional Office",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Director of Nursing Community Outreach",
+                    "type": "department",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Assistant Dean of Student Affairs",
+                    "type": "leadership",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Counselor",
+                        "type": "position",
+                        "head": "Vacante",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Assistant Dean of Research",
+                    "type": "leadership",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Director of Research and Evidence-Based Practice Center",
+                        "type": "department",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Administrator",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  }
+                ]
+              },
+              {
+                "name": "School of Pharmacy",
+                "type": "school",
+                "head": "Wanda T. Maldonado Dávila",
+                "head_title": "Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Associate Dean of Academic Affairs",
+                    "type": "leadership",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Curriculum Evaluation and Institutional Effectiveness Division",
+                        "type": "division",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Continuing Education and Professional Studies Division",
+                        "type": "division",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Assistant Dean of Research and Graduate Programs",
+                    "type": "leadership",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Graduate Program",
+                        "type": "program",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Assistant Dean of Student Affairs",
+                    "type": "leadership",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Administrator",
+                    "type": "position",
+                    "head": "Vacante",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director of Institutional Development and External Relations",
+                    "type": "leadership",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director of Pharmacy Practice Department",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Pharmacy Residency Programs",
+                        "type": "program",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Office of Experiential Education",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Drug Information and Research Center",
+                        "type": "center",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pharmacy Museum and Medicinal Plants Garden",
+                    "type": "facility",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Director of Pharmaceutical Sciences Department",
+                    "type": "department",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Laboratory Support Unit",
+                        "type": "unit",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Research Laboratories",
+                        "type": "facility",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Pharmaceutical Skills Laboratory",
+                        "type": "facility",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "School of Health Professions",
+                "type": "school",
+                "head": "Lourdes E. Soto de Laurido, Ed.D., MPHE, MHS honoris causa",
+                "head_title": "Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Advisory Board",
+                    "type": "advisory",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Standing Committees",
+                    "type": "committee_group",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Office of Student Affairs",
+                    "type": "office",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Health Clinics",
+                    "type": "clinic_group",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Office of Academic Affairs",
+                    "type": "office",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Undergraduate Programs Department",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Office of Administrative Affairs",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Office of External Resources",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Programs",
+                            "type": "program_group",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Dental Assistance with Expanded Functions",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Health Education",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Health Sciences",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Medical Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Nuclear Medicine Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Ophthalmic Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Radiologic Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Veterinary Technology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Graduate Programs Department",
+                        "type": "department",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Office of Information Systems and Educational Resources",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Programs",
+                            "type": "program_group",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Health Information Administration",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Audiology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Clinical Laboratory Sciences",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Cytotechnology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Dietetic Internship",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Speech-Language Pathology",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Physical Therapy",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Occupational Therapy",
+                                "type": "program",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Clinical Research",
+                                "type": "program",
+                                "note": "Academic degree joint with UPR-MSC School of Medicine",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Division of Continuing Education and Professional Studies",
+                        "type": "division",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Projects",
+                            "type": "project_group",
+                            "initial_collapsed": true,
+                            "sub_elements": [
+                              {
+                                "name": "Interdisciplinary Project for Excellence in Services (PIES)",
+                                "type": "project",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Institute of Research for Global Health Promotion and Health Education (IIPESAG)",
+                                "type": "project",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Center for Advanced Studies in Medical Emergencies (CEAEM)",
+                                "type": "project",
+                                "initial_collapsed": true
+                              },
+                              {
+                                "name": "Hispanics in Research Capability (HIREC)",
+                                "type": "project",
+                                "note": "Academic degree joint with UPR-MSC School of Medicine",
+                                "initial_collapsed": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Graduate School of Public Health",
+                "type": "school",
+                "head": "Edgardo Ruiz Cora, MPH, PhD",
+                "head_title": "Dean",
+                "initial_collapsed": true,
+                "sub_elements": [
+                  {
+                    "name": "Special Assistant to the Dean - Administration Office",
+                    "type": "leadership",
+                    "head": "Juan J. Tejada Guzmán, MBA",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Informatics Center",
+                        "type": "center",
+                        "head": "José Sobrino Delgado",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Academic Affairs",
+                    "type": "office",
+                    "head": "Ivelisse García Meléndez, MS, EdD",
+                    "head_title": "Director",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Academic Support Units",
+                        "type": "unit_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Office of Curriculum and Evaluation",
+                            "type": "office",
+                            "head": "Ivelisse M. García Meléndez, EdD",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Division of Continuing Education and Professional Studies",
+                            "type": "division",
+                            "head": "Xionara Castillo Meléndez, MS",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Doctoral Programs in Public Health",
+                            "type": "program",
+                            "head": "Ivelisse M. García Meléndez, EdD",
+                            "head_title": "Director",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Student Affairs",
+                    "type": "office",
+                    "head": "Yiselly Vázquez Guzmán, MPHE, MA, CGG, MCHES, EdD",
+                    "head_title": "Director",
+                    "initial_collapsed": true
+                  },
+                  {
+                    "name": "Special Research and Service Units",
+                    "type": "unit_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Center for Sociomedical Evaluation and Research",
+                        "type": "center",
+                        "head": "Edgardo Ruiz Cora, MPH, PhD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Family Planning Program, Title X",
+                        "type": "program",
+                        "head": "Ramón Sánchez Rodríguez, MD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Developmental Disabilities Institute",
+                        "type": "institute",
+                        "head": "Carol Salas Pagán, PsyD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Departments",
+                    "type": "department_group",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Biostatistics and Epidemiology",
+                        "type": "department",
+                        "head": "Juan C. Reyes Pulliza, EdD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Health Services Administration",
+                        "type": "department",
+                        "head": "Marisol Peña Orellana, MS, EdD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Social Sciences",
+                        "type": "department",
+                        "head": "Hiram V. Arroyo Acevedo, PhD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Human Development",
+                        "type": "department",
+                        "head": "Ana M. Parrilla Rodríguez, MD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Environmental Health",
+                        "type": "department",
+                        "head": "Luis A. Bonilla Soto, PhD",
+                        "head_title": "Director",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Support Offices and Rector's Staff",
+            "type": "support_structure",
+            "initial_collapsed": true,
+            "sub_elements": [
+              {
+                "name": "Budget",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Faculty Ombudsman",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Legal Advisor",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Student Ombudsman",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Anatomical Donations Board",
+                "type": "committee",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Administrative Board",
+                "type": "committee",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Press and Communications",
+                "type": "office",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Academic Senate",
+                "type": "governing_body",
+                "head": "Raul Rivera González",
+                "head_title": "President",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Primate Center",
+                "type": "research_facility",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Employee Help and Services",
+                "type": "service",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Information Systems",
+                "type": "department",
+                "initial_collapsed": true
+              },
+              {
+                "name": "Executive Secretary",
+                "type": "position",
+                "head": "Raul Rivera González",
+                "initial_collapsed": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
