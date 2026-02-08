@@ -442,6 +442,175 @@
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
+                    "name": "Decano Asociado de Asuntos Académicos",
+                    "type": "deanery",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Oficina de Currículo",
+                        "type": "office",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Centro de Destrezas Clínicas",
+                            "type": "committee",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Oficina de Desarrollo y Apoyo a Facultad",
+                            "type": "office",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Centro de Informática y Tecnología",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Oficina de Evaluación y Investigación en Educación Medica",
+                        "type": "office",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Decano Asociado de Asuntos Clinicos",
+                    "type": "deanery",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Affiliated Clinical Sites",
+                        "type": "center",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Decano Asociado Ciencias Biomedicas y Programas Graduados",
+                    "type": "deanery",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Programas Graduados",
+                        "type": "program_group",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Plan de Practica Medica Intramural",
+                        "type": "program",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Escuela de Medicina Clinica",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Hospital Cardiovascular",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Clinica Psiquitrica 9no Piso",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Hospital de la UPR, Dr. Federico Trilla",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "University District Hospita",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "ASEM",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Hospital Pediátrico Universitario",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Other",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Decano Asociado de Asuntos Académicos",
+                        "type": "deanery",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Decano Asociado de Auntos Facultativos",
+                        "type": "deanery",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Decano Asociado de Asuntos Estudiantiles",
+                        "type": "deanery",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Centro del Bienestar Estudiantil",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Consejería Académica",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Consejería Profesional",
+                            "type": "program",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Decano Asociado de Educación Médica Graduada",
+                        "type": "deanery",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Programa de Residencia",
+                            "type": "program",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Endowed Health Services Research Center",
+                        "type": "center",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Oficina de Desarrollo",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Access and Engagement Council",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Hispanic Center of Excellence",
+                        "type": "office",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
                     "name": "Departamentos de Ciencias Básicas",
                     "type": "department_group",
                     "initial_collapsed": true,

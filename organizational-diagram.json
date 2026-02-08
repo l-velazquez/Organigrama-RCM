@@ -442,34 +442,203 @@
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Basic Sciences Departments",
-                    "type": "department_group",
+                    "name": "Associate Dean for Academic Affairs",
+                    "type": "deanery",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Microbiology and Medical Zoology",
-                        "type": "department",
+                        "name": "Curriculum Office",
+                        "type": "office",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Clinical Skills Center",
+                            "type": "committee",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Office of Faculty Development and Support",
+                            "type": "office",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Informatics and Technology Center",
+                        "type": "office",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Pharmacology and Toxicology",
-                        "type": "department",
+                        "name": "Office of Evaluation and Research in Medical Education",
+                        "type": "office",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Associate Dean for Clinical Affairs",
+                    "type": "deanery",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Affiliated Clinical Sites",
+                        "type": "center",
+                        "initial_collapsed": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Associate Dean for Biomedical Sciences and Graduate Programs",
+                    "type": "deanery",
+                    "initial_collapsed": true,
+                    "sub_elements": [
+                      {
+                        "name": "Graduate Programs",
+                        "type": "program_group",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Biochemistry",
-                        "type": "department",
+                        "name": "Intramural Medical Practice Plan",
+                        "type": "program",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "School of Clinical Medicine",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Cardiovascular Hospital",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "9th Floor Psychiatric Clinic",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "UPR Hospital, Dr. Federico Trilla",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "University District Hospital",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "ASEM",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "University Pediatric Hospital",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Other",
+                            "type": "clinic_group",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Associate Dean for Academic Affairs",
+                        "type": "deanery",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Anatomy and Neurobiology",
-                        "type": "department",
+                        "name": "Associate Dean for Faculty Affairs",
+                        "type": "deanery",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Physiology",
-                        "type": "department",
+                        "name": "Associate Dean for Student Affairs",
+                        "type": "deanery",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Student Wellness Center",
+                            "type": "office",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Academic Counseling",
+                            "type": "program",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Professional Counseling",
+                            "type": "program",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Associate Dean for Graduate Medical Education",
+                        "type": "deanery",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Residency Program",
+                            "type": "program",
+                            "initial_collapsed": true
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Endowed Health Services Research Center",
+                        "type": "center",
                         "initial_collapsed": true
+                      },
+                      {
+                        "name": "Development Office",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Access and Engagement Council",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Hispanic Center of Excellence",
+                        "type": "office",
+                        "initial_collapsed": true
+                      },
+                      {
+                        "name": "Basic Sciences Departments",
+                        "type": "department_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Microbiology and Medical Zoology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Pharmacology and Toxicology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Biochemistry",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Anatomy and Neurobiology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Physiology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          }
+                        ]
                       }
                     ]
                   },
