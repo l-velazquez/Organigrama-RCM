@@ -1,165 +1,165 @@
 {
   "organization": {
-    "name": "Recinto de Ciencias Médicas (RCM)",
+    "name": "Medical Sciences Campus (MSC)",
     "type": "academic_medical_institution",
     "structure": {
       "rectoria": {
-        "name": "Rectoría",
+        "name": "Chancellor's Office",
         "type": "executive_leadership",
         "initial_collapsed": false,
         "sub_elements": [
           {
-            "name": "Decanato de Asuntos Académicos",
+            "name": "Deanship of Academic Affairs",
             "type": "deanery",
             "head": "Yasmín Pedrogo Rodríguez, MD, FAAP, MEdL",
-            "head_title": "Decana",
+            "head_title": "Dean",
             "initial_collapsed": true,
             "sub_elements": [
               {
-                "name": "Decano Asociado",
+                "name": "Associate Dean",
                 "type": "leadership",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Oficina de Administración",
+                    "name": "Administration Office",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Programa de Asistencia en Enseñanza e Investigación",
+                    "name": "Teaching and Research Assistance Program",
                     "type": "program",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Instituto de Neurobiología",
+                    "name": "Institute of Neurobiology",
                     "type": "research_institute",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Iniciativa de Capacitación en Investigación Graduada para el Mejoramiento Estudiantil (G-RISE)",
+                    "name": "Graduate Research Initiative for Student Enhancement (G-RISE)",
                     "type": "research_program",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Revista de Ciencias de la Salud de Puerto Rico (PRHSJ)",
+                    "name": "Puerto Rico Health Sciences Journal (PRHSJ)",
                     "type": "journal",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Instituto de Mentoría para la Investigación en VIH y Salud Mental (MI-HMHR)",
+                    "name": "Mentoring Institute for HIV and Mental Health Research (MI-HMHR)",
                     "type": "research_institute",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficina de Desarrollo Académico",
+                    "name": "Office of Academic Development",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficina del Registrador",
+                    "name": "Registrar's Office",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "División Central de Educación Continua y Estudios Profesionales",
+                    "name": "Central Division of Continuing Education and Professional Studies",
                     "type": "division",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficina de Investigación, Planificación y Evaluación Institucional",
+                    "name": "Office of Institutional Research, Planning, and Evaluation",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Biblioteca Conrado F. Asenjo",
+                    "name": "Conrado F. Asenjo Library",
                     "type": "library",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Centro de Apoyo Tecnológico en la Academia",
+                    "name": "Center for Technological Support in Academia",
                     "type": "center",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Centro de Educación y Capacitación sobre el SIDA",
+                    "name": "AIDS Education and Training Center",
                     "type": "center",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "División en Línea del RCM",
+                    "name": "MSC Online Division",
                     "type": "division",
                     "initial_collapsed": true
                   }
                 ]
               },
               {
-                "name": "Acreditación y Licenciamiento",
+                "name": "Accreditation and Licensing",
                 "type": "office",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Comité de Mejora Continua de la Calidad (CQI)",
+                    "name": "Continuous Quality Improvement Committee (CQI)",
                     "type": "committee",
                     "initial_collapsed": true
                   }
                 ]
               },
               {
-                "name": "Programa de Centros de Investigación en Instituciones Minoritarias (RCMI)",
+                "name": "Research Centers in Minority Institutions (RCMI) Program",
                 "type": "research_program",
                 "head": "Emma Fernández-Repollet, PhD",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true
               },
               {
-                "name": "Instituto de Investigación en Ciencias del Comportamiento",
+                "name": "Behavioral Sciences Research Institute",
                 "type": "research_institute",
                 "initial_collapsed": true
               },
               {
-                "name": "Proyecto Título V",
+                "name": "Title V Project",
                 "type": "program",
                 "initial_collapsed": true
               },
               {
-                "name": "Instituto de Bioética Eugenio María de Hostos",
+                "name": "Eugenio María de Hostos Bioethics Institute",
                 "type": "institute",
                 "initial_collapsed": true
               },
               {
-                "name": "Centro de la Mujer y la Salud",
+                "name": "Center for Women and Health",
                 "type": "center",
                 "initial_collapsed": true
               }
             ]
           },
           {
-            "name": "Decanato de Investigación",
+            "name": "Deanship of Research",
             "type": "deanery",
             "head": "Annabell C. Segarra Marrero",
-            "head_title": "Decana",
+            "head_title": "Dean",
             "initial_collapsed": true
           },
           {
-            "name": "Decanato de Estudiantes",
+            "name": "Deanship of Students",
             "type": "deanery",
             "head": "Edna Pacheco Acosta, DrPH, MSc",
-            "head_title": "Decana",
+            "head_title": "Dean",
             "initial_collapsed": true,
             "sub_elements": [
               {
-                "name": "Oficina del Decano de Estudiantes",
+                "name": "Office of the Dean of Students",
                 "type": "office",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Secretaria Ejecutiva I",
+                    "name": "Executive Secretary I",
                     "type": "position",
                     "head": "Jussett Vega Vega",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Decana Asociada de Estudiantes",
+                    "name": "Associate Dean of Students",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
@@ -167,24 +167,24 @@
                 ]
               },
               {
-                "name": "Administración",
+                "name": "Administration",
                 "type": "department",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Ayudante Especial Decana - Asuntos Administrativos",
+                    "name": "Special Assistant to the Dean - Administrative Affairs",
                     "type": "position",
                     "head": "Carmen I. Rivera Lozada",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Asistente Administrativo IV",
+                    "name": "Administrative Assistant IV",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Mensajero II",
+                    "name": "Messenger II",
                     "type": "position",
                     "head": "Héctor Meléndez",
                     "initial_collapsed": true
@@ -192,44 +192,44 @@
                 ]
               },
               {
-                "name": "Admisiones",
+                "name": "Admissions",
                 "type": "office",
                 "head": "Maribel Ortiz",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Secretaria Administrativa II",
+                    "name": "Administrative Secretary II",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Admisiones II",
+                    "name": "Admissions Officer II",
                     "type": "position",
                     "head": "Janette Carrasquillo",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Admisiones II",
+                    "name": "Admissions Officer II",
                     "type": "position",
                     "head": "Vilma Santiago",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Admisiones III",
+                    "name": "Admissions Officer III",
                     "type": "position",
                     "head": "Raiza Hidalgo",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Admisiones III",
+                    "name": "Admissions Officer III",
                     "type": "position",
                     "head": "Ruth Rivera Rolón",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Admisiones III",
+                    "name": "Admissions Officer III",
                     "type": "position",
                     "head": "Yuliana Santiago",
                     "initial_collapsed": true
@@ -237,38 +237,38 @@
                 ]
               },
               {
-                "name": "Centro Estudiantil de Consejería y Sicología (CECSI)",
+                "name": "Student Counseling and Psychology Center (CECSI)",
                 "type": "center",
                 "head": "Frank Valentín Silva",
                 "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Secretaria Administrativa II",
+                    "name": "Administrative Secretary II",
                     "type": "position",
                     "head": "Wendy Guzmán Hernaiz",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Consejero III",
+                    "name": "Counselor III",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Consejero III",
+                    "name": "Counselor III",
                     "type": "position",
                     "head": "Carlos Cañuelas",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Consejero III",
+                    "name": "Counselor III",
                     "type": "position",
                     "head": "Maribel Pagán",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Sicólogo III",
+                    "name": "Psychologist III",
                     "type": "position",
                     "head": "María M Hernández",
                     "initial_collapsed": true
@@ -276,20 +276,20 @@
                 ]
               },
               {
-                "name": "Servicios Médicos a Estudiantes",
+                "name": "Student Medical Services",
                 "type": "service",
                 "head": "Sohé Berríos Díaz",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Enfermera Generalista",
+                    "name": "General Nurse",
                     "type": "position",
                     "head": "Carolyn Domínguez",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Secretaria Administrativa II",
+                    "name": "Administrative Secretary II",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
@@ -297,44 +297,44 @@
                 ]
               },
               {
-                "name": "Asistencia Económica",
+                "name": "Financial Aid",
                 "type": "office",
                 "head": "Yolanda Rivera Rolón",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Secretaria Administrativa II",
+                    "name": "Administrative Secretary II",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Asistencia Económica IV",
+                    "name": "Financial Aid Officer IV",
                     "type": "position",
                     "head": "Juan Burgos",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Asistencia Económica III",
+                    "name": "Financial Aid Officer III",
                     "type": "position",
                     "head": "Lymari Vélez",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficial de Asistencia Económica II",
+                    "name": "Financial Aid Officer II",
                     "type": "position",
                     "head": "Leyda Márquez",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Técnico en Tecnología de Información",
+                    "name": "Information Technology Technician",
                     "type": "position",
                     "head": "Omar Santiago",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Registrador de Datos en Sistemas en Línea I",
+                    "name": "Online Systems Data Registrar I",
                     "type": "position",
                     "head": "Efraín Rosario",
                     "initial_collapsed": true
@@ -342,14 +342,14 @@
                 ]
               },
               {
-                "name": "Promoción y Reclutamiento Estudiantil",
+                "name": "Student Promotion and Recruitment",
                 "type": "office",
                 "head": "Sohé Berríos Díaz",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Asistente Administrativa III",
+                    "name": "Administrative Assistant III",
                     "type": "position",
                     "head": "Johanna Rosario",
                     "initial_collapsed": true
@@ -357,14 +357,14 @@
                 ]
               },
               {
-                "name": "Oficina de Servicios a Estudiantes con Impedimentos (OSEI)",
+                "name": "Office of Services for Students with Disabilities (OSEI)",
                 "type": "office",
                 "head": "Yeraldin Valerio González",
-                "head_title": "Directora",
+                "head_title": "Director",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Asistente Administrativa II",
+                    "name": "Administrative Assistant II",
                     "type": "position",
                     "head": "Terie Rey Berríos",
                     "initial_collapsed": true
@@ -372,14 +372,14 @@
                 ]
               },
               {
-                "name": "Programa Calidad de Vida",
+                "name": "Quality of Life Program",
                 "type": "program",
                 "head": "Vilma Santiago",
-                "head_title": "Coordinadora",
+                "head_title": "Coordinator",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Coordinador de Actividades Deportivas",
+                    "name": "Sports Activities Coordinator",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
@@ -387,96 +387,96 @@
                 ]
               },
               {
-                "name": "Consejo General de Estudiantes",
+                "name": "General Student Council",
                 "type": "council",
                 "head": "Frank Valentín Silva",
-                "head_title": "Asesor",
+                "head_title": "Advisor",
                 "initial_collapsed": true
               }
             ]
           },
           {
-            "name": "Decanato de Administración",
+            "name": "Deanship of Administration",
             "type": "deanery",
             "head": "María M. Santiago Morales",
-            "head_title": "Decana",
+            "head_title": "Dean",
             "initial_collapsed": true,
             "sub_elements": [
               {
-                "name": "Gerencia de Capital Humano",
+                "name": "Human Capital Management",
                 "type": "department",
                 "initial_collapsed": true
               },
               {
-                "name": "Departamento de Finanzas",
+                "name": "Finance Department",
                 "type": "department",
                 "initial_collapsed": true
               },
               {
-                "name": "Departamento de Recursos Físicos",
+                "name": "Physical Resources Department",
                 "type": "department",
                 "initial_collapsed": true
               },
               {
-                "name": "Oficina de Planificación y Diseño de Construcción",
+                "name": "Office of Construction Planning and Design",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Oficina de Compras y Suministros",
+                "name": "Purchasing and Supplies Office",
                 "type": "office",
                 "initial_collapsed": true
               }
             ]
           },
           {
-            "name": "Unidades Académicas",
+            "name": "Academic Units",
             "type": "academic_divisions",
             "initial_collapsed": true,
             "sub_elements": [
               {
-                "name": "Escuela de Medicina",
+                "name": "School of Medicine",
                 "type": "school",
                 "head": "Deborah H. Silva, MD, FAAP, MEd",
-                "head_title": "Decana",
+                "head_title": "Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Decano Asociado de Asuntos Académicos",
+                    "name": "Associate Dean for Academic Affairs",
                     "type": "deanery",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Oficina de Currículo",
+                        "name": "Curriculum Office",
                         "type": "office",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Centro de Destrezas Clínicas",
+                            "name": "Clinical Skills Center",
                             "type": "committee",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Oficina de Desarrollo y Apoyo a Facultad",
+                            "name": "Office of Faculty Development and Support",
                             "type": "office",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Centro de Informática y Tecnología",
+                        "name": "Informatics and Technology Center",
                         "type": "office",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Oficina de Evaluación y Investigación en Educación Medica",
+                        "name": "Office of Evaluation and Research in Medical Education",
                         "type": "office",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Decano Asociado de Asuntos Clinicos",
+                    "name": "Associate Dean for Clinical Affairs",
                     "type": "deanery",
                     "initial_collapsed": true,
                     "sub_elements": [
@@ -488,42 +488,42 @@
                     ]
                   },
                   {
-                    "name": "Decano Asociado Ciencias Biomedicas y Programas Graduados",
+                    "name": "Associate Dean for Biomedical Sciences and Graduate Programs",
                     "type": "deanery",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Programas Graduados",
+                        "name": "Graduate Programs",
                         "type": "program_group",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Plan de Practica Medica Intramural",
+                        "name": "Intramural Medical Practice Plan",
                         "type": "program",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Escuela de Medicina Clinica",
+                            "name": "School of Clinical Medicine",
                             "type": "program",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Hospital Cardiovascular",
+                            "name": "Cardiovascular Hospital",
                             "type": "program",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Clinica Psiquitrica 9no Piso",
+                            "name": "9th Floor Psychiatric Clinic",
                             "type": "clinic_group",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Hospital de la UPR, Dr. Federico Trilla",
+                            "name": "UPR Hospital, Dr. Federico Trilla",
                             "type": "clinic_group",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "University District Hospita",
+                            "name": "University District Hospital",
                             "type": "clinic_group",
                             "initial_collapsed": true
                           },
@@ -533,7 +533,7 @@
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Hospital Pediátrico Universitario",
+                            "name": "University Pediatric Hospital",
                             "type": "clinic_group",
                             "initial_collapsed": true
                           },
@@ -545,44 +545,44 @@
                         ]
                       },
                       {
-                        "name": "Decano Asociado de Asuntos Académicos",
+                        "name": "Associate Dean for Academic Affairs",
                         "type": "deanery",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Decano Asociado de Auntos Facultativos",
+                        "name": "Associate Dean for Faculty Affairs",
                         "type": "deanery",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Decano Asociado de Asuntos Estudiantiles",
+                        "name": "Associate Dean for Student Affairs",
                         "type": "deanery",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Centro del Bienestar Estudiantil",
+                            "name": "Student Wellness Center",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Consejería Académica",
+                            "name": "Academic Counseling",
                             "type": "program",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Consejería Profesional",
+                            "name": "Professional Counseling",
                             "type": "program",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Decano Asociado de Educación Médica Graduada",
+                        "name": "Associate Dean for Graduate Medical Education",
                         "type": "deanery",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Programa de Residencia",
+                            "name": "Residency Program",
                             "type": "program",
                             "initial_collapsed": true
                           }
@@ -594,7 +594,7 @@
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Oficina de Desarrollo",
+                        "name": "Development Office",
                         "type": "office",
                         "initial_collapsed": true
                       },
@@ -607,254 +607,254 @@
                         "name": "Hispanic Center of Excellence",
                         "type": "office",
                         "initial_collapsed": true
+                      },
+                      {
+                        "name": "Basic Sciences Departments",
+                        "type": "department_group",
+                        "initial_collapsed": true,
+                        "sub_elements": [
+                          {
+                            "name": "Microbiology and Medical Zoology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Pharmacology and Toxicology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Biochemistry",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Anatomy and Neurobiology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          },
+                          {
+                            "name": "Physiology",
+                            "type": "department",
+                            "initial_collapsed": true
+                          }
+                        ]
                       }
                     ]
                   },
                   {
-                    "name": "Departamentos de Ciencias Básicas",
+                    "name": "Clinical Departments",
                     "type": "department_group",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Microbiología y Zoología Médica",
+                        "name": "Anesthesiology",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Farmacología y Toxicología",
+                        "name": "Dermatology",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Bioquímica",
+                        "name": "Family Medicine",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Anatomía y Neurobiología",
+                        "name": "Obstetrics and Gynecology",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Fisiología",
-                        "type": "department",
-                        "initial_collapsed": true
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Departamentos Clínicos",
-                    "type": "department_group",
-                    "initial_collapsed": true,
-                    "sub_elements": [
-                      {
-                        "name": "Anestesiología",
+                        "name": "Pathology",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Dermatología",
+                        "name": "Physical Medicine, Rehabilitation, and Sports Health",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Medicina Familiar",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Obstetricia y Ginecología",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Patología",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Medicina Física, Rehabilitación y Salud Deportiva",
-                        "type": "department",
-                        "initial_collapsed": true
-                      },
-                      {
-                        "name": "Cirugía",
+                        "name": "Surgery",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Neurocirugía",
+                            "name": "Neurosurgery",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Urología",
+                            "name": "Urology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Ortopedia",
+                            "name": "Orthopedics",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Otorrinolaringología, Cabeza y Cuello",
+                            "name": "Otorhinolaryngology, Head and Neck",
                             "type": "division",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Medicina de Emergencia",
+                        "name": "Emergency Medicine",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Medicina Interna",
+                        "name": "Internal Medicine",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Cardiología",
+                            "name": "Cardiology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Endocrinología",
+                            "name": "Endocrinology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Gastroenterología",
+                            "name": "Gastroenterology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Geriatría",
+                            "name": "Geriatrics",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Hematología y Oncología",
+                            "name": "Hematology and Oncology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Enfermedades Infecciosas",
+                            "name": "Infectious Diseases",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Medicina General",
+                            "name": "General Medicine",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Reumatología",
+                            "name": "Rheumatology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Nefrología",
+                            "name": "Nephrology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Neurología",
+                            "name": "Neurology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Neumología",
+                            "name": "Pneumology",
                             "type": "division",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Oftalmología",
+                        "name": "Ophthalmology",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Pediatría",
+                        "name": "Pediatrics",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Pediatría General",
+                            "name": "General Pediatrics",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Cardiología",
+                            "name": "Cardiology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Endocrinología",
+                            "name": "Endocrinology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Enfermedades Infecciosas",
+                            "name": "Infectious Diseases",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Gastroenterología",
+                            "name": "Gastroenterology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Hematología y Oncología",
+                            "name": "Hematology and Oncology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Neurología",
+                            "name": "Neurology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Nefrología",
+                            "name": "Nephrology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Neonatología",
+                            "name": "Neonatology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Genética",
+                            "name": "Genetics",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Neumología",
+                            "name": "Pneumology",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Cuidado Intensivo",
+                            "name": "Intensive Care",
                             "type": "division",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Reumatología",
+                            "name": "Rheumatology",
                             "type": "division",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Psiquiatría",
+                        "name": "Psychiatry",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Ciencias Radiológicas",
+                        "name": "Radiological Sciences",
                         "type": "department",
                         "initial_collapsed": true
                       }
@@ -863,67 +863,67 @@
                 ]
               },
               {
-                "name": "Escuela de Medicina Dental",
+                "name": "School of Dental Medicine",
                 "type": "school",
                 "head": "Lidia M. Guerrero, DMD, FACS",
-                "head_title": "Decana",
+                "head_title": "Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
                     "name": "SANUS PR",
                     "type": "program",
-                    "head": "Dra. Elaine Págan",
+                    "head": "Dr. Elaine Págan",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Ayudante Ejecutivo de Decano para Administración",
+                    "name": "Executive Assistant to the Dean for Administration",
                     "type": "executive_assistant",
-                    "head": "Sr. Josué Vélez",
+                    "head": "Mr. Josué Vélez",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Centro de Informática y Recursos Educativos (CIRE)",
+                    "name": "Center for Informatics and Educational Resources (CIRE)",
                     "type": "office",
                     "head": "Dr. Eliel Melón",
                     "head_title": "Director",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "División de Educación Continua y Estudios Profesionales",
+                    "name": "Division of Continuing Education and Professional Studies",
                     "type": "office",
-                    "head": "Dra. Lorna Rodriguez",
-                    "head_title": "Directora",
+                    "head": "Dr. Lorna Rodriguez",
+                    "head_title": "Director",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Presupuesto: Centro de Investigación UPR-EMD",
+                    "name": "Budget: UPR-SDM Research Center",
                     "type": "office",
                     "head": "Dr. Augusto Elías",
                     "head_title": "Director",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Decanato Asociado",
+                    "name": "Associate Deanship",
                     "type": "executive_leadership",
-                    "head": "Dra. Arlene Sánchez",
-                    "head_title": "Decano Asociado Interino",
+                    "head": "Dr. Arlene Sánchez",
+                    "head_title": "Interim Associate Dean",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Departamento de Ciencias Restaurativas",
+                        "name": "Department of Restorative Sciences",
                         "type": "department",
-                        "head": "Dra. Dunia Rodríguez",
-                        "head_title": "Directora Interina",
+                        "head": "Dr. Dunia Rodríguez",
+                        "head_title": "Interim Director",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Sección de Prostodoncia",
+                            "name": "Prosthodontics Section",
                             "type": "division",
-                            "head": "Dra. Magda Prats",
+                            "head": "Dr. Magda Prats",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Sección de Operativa",
+                            "name": "Operative Section",
                             "type": "division",
                             "head": "Dr. Rafael Portela",
                             "initial_collapsed": true
@@ -931,139 +931,139 @@
                         ]
                       },
                       {
-                        "name": "Departamento de Ciencias Ecológicas",
+                        "name": "Department of Ecological Sciences",
                         "type": "department",
-                        "head": "Dra. Carla D. Rodríguez",
-                        "head_title": "Directora Interina",
+                        "head": "Dr. Carla D. Rodríguez",
+                        "head_title": "Interim Director",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Sección de Orto-Pedo",
+                            "name": "Ortho-Pedo Section",
                             "type": "division",
-                            "head": "Dra. Carla D. Rodríguez",
+                            "head": "Dr. Carla D. Rodríguez",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Sección de Odontología Comunitaria",
+                            "name": "Community Dentistry Section",
                             "type": "division",
-                            "head": "Dra. Alice Arroyo",
+                            "head": "Dr. Alice Arroyo",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Departamento de Ciencias Quirúrgicas",
+                        "name": "Department of Surgical Sciences",
                         "type": "department",
-                        "head": "Dra. Xiomara Rivera",
-                        "head_title": "Directora Interina",
+                        "head": "Dr. Xiomara Rivera",
+                        "head_title": "Interim Director",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Sección de Cirugía Oral",
+                            "name": "Oral Surgery Section",
                             "type": "division",
-                            "head": "Dra. Elizabeth Orsini",
+                            "head": "Dr. Elizabeth Orsini",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Sección de Biología Oral",
+                            "name": "Oral Biology Section",
                             "type": "division",
                             "head": "Dr. Germán G. Salazar",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Sección de Ciencias Diagnósticas",
+                            "name": "Diagnostic Sciences Section",
                             "type": "division",
-                            "head": "Dra. Ginnette Izquierdo",
+                            "head": "Dr. Ginnette Izquierdo",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Sección de Endo-Perio",
+                            "name": "Endo-Perio Section",
                             "type": "division",
-                            "head": "Dra. Teresa J. Irizarry",
+                            "head": "Dr. Teresa J. Irizarry",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Decanato Auxiliar para Educación Dental Graduada",
+                        "name": "Assistant Deanship for Graduate Dental Education",
                         "type": "deanery",
-                        "head": "Dra. Yolanda Heredia",
-                        "head_title": "Decana Auxiliar",
+                        "head": "Dr. Yolanda Heredia",
+                        "head_title": "Assistant Dean",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Cirugía Oral y Maxilofacial",
+                            "name": "Oral and Maxillofacial Surgery",
                             "type": "program",
                             "head": "Dr. Francisco L. Bermúdez",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Residencia en Odontología General",
+                            "name": "Residency in General Dentistry",
                             "type": "program",
-                            "head": "Dra. Alice M. Arroyo",
-                            "head_title": "Directora Interina",
+                            "head": "Dr. Alice M. Arroyo",
+                            "head_title": "Interim Director",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Decana Auxiliar Interina para Asuntos Académicos",
+                        "name": "Interim Assistant Deanship for Academic Affairs",
                         "type": "deanery",
-                        "head": "Dra. Gianna N. Piovanetti",
-                        "head_title": "Decana Auxiliar Interina",
+                        "head": "Dr. Gianna N. Piovanetti",
+                        "head_title": "Interim Assistant Dean",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Oficina de Currículo",
+                            "name": "Office of Curriculum",
                             "type": "department",
                             "head": "Dr. Evaristo Delgado",
                             "head_title": "Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Oficina de Avalúo Académico e Institucional",
+                            "name": "Office of Academic and Institutional Assessment",
                             "type": "department",
-                            "head": "Dra. Gianna N. Piovanetti",
-                            "head_title": "Directora",
+                            "head": "Dr. Gianna N. Piovanetti",
+                            "head_title": "Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Oficina de Desarrollo de Facultad",
+                            "name": "Office of Faculty Development",
                             "type": "department",
-                            "head": "Dra. Mitzy Perez",
-                            "head_title": "Directora",
+                            "head": "Dr. Mitzy Perez",
+                            "head_title": "Director",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Proyecto de Adquisicion de Instrumentos Dentales",
+                        "name": "Dental Instrument Acquisition Project",
                         "type": "project",
-                        "head": "Dra. Mitzy Perez",
-                        "head_title": "Directora"
+                        "head": "Dr. Mitzy Perez",
+                        "head_title": "Director"
                       },
                       {
-                        "name": "Decano Auxiliar para Investigación",
+                        "name": "Assistant Dean for Research",
                         "type": "deanery",
                         "head": "Dr. Augusto Elías",
-                        "head_title": "Decano Auxiliar"
+                        "head_title": "Assistant Dean"
                       },
                       {
-                        "name": "Decana Auxiliar Interina para Talleres Cinicos",
+                        "name": "Interim Assistant Deanship for Clinical Workshops",
                         "type": "deanery",
-                        "head": "Dra. Najema Alí",
-                        "head_title": "Decana Auxiliar Interina",
+                        "head": "Dr. Najema Alí",
+                        "head_title": "Interim Assistant Dean",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Decana Auxiliar Interina para Asuntos Estudiantiles",
+                        "name": "Interim Assistant Deanship for Student Affairs",
                         "type": "deanery",
-                        "head": "Dra. Jocelyn A. Medina",
-                        "head_title": "Decana Auxiliar Interina",
+                        "head": "Dr. Jocelyn A. Medina",
+                        "head_title": "Interim Assistant Dean",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Programa de Ubicación Avanzada",
+                            "name": "Advanced Placement Program",
                             "type": "program",
                             "head": "Dr. José R. Matos",
                             "head_title": "Director",
@@ -1072,25 +1072,25 @@
                         ]
                       },
                       {
-                        "name": "Decana Auxiliar para Educación Dental Graduada",
+                        "name": "Assistant Deanship for Graduate Dental Education",
                         "type": "deanery",
-                        "head": "Dra. Yolanda Heredia",
-                        "head_title": "Decana Auxiliar",
+                        "head": "Dr. Yolanda Heredia",
+                        "head_title": "Assistant Dean",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Sistema de Salud NYU Langone",
+                            "name": "NYU Langone Health System",
                             "type": "program",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Endodoncia",
+                                "name": "Endodontics",
                                 "type": "program",
                                 "head": "Dr. Robert Goldberger",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Educación Avanzada en Odontología General",
+                                "name": "Advanced Education in General Dentistry",
                                 "type": "program",
                                 "head": "Dr. Addison Flores",
                                 "initial_collapsed": true
@@ -1098,38 +1098,38 @@
                             ]
                           },
                           {
-                            "name": "Cirugía Oral y Maxilofacial",
+                            "name": "Oral and Maxillofacial Surgery",
                             "type": "program",
                             "head": "Dr. Francisco L. Bermúdez",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Odontopediatría",
+                            "name": "Pediatric Dentistry",
                             "type": "program",
                             "head": "Dr. Emilio Agrait",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Ortodoncia",
+                            "name": "Orthodontics",
                             "type": "program",
                             "head": "Dr. José A. Morales",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Prostodoncia",
+                            "name": "Prosthodontics",
                             "type": "program",
                             "head": "Dr. Arturo L. Blanco",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Residencia en Odontología General",
+                            "name": "Residency in General Dentistry",
                             "type": "program",
-                            "head": "Dra. Alice M. Arroyo",
-                            "head_title": "Directora Interina",
+                            "head": "Dr. Alice M. Arroyo",
+                            "head_title": "Interim Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Periodoncia",
+                            "name": "Periodontics",
                             "type": "program",
                             "head": "Dr. Marcelino Negrón",
                             "initial_collapsed": true
@@ -1139,7 +1139,7 @@
                     ]
                   },
                   {
-                    "name": "Oficina de Desarrollo Institucional",
+                    "name": "Office of Institutional Development",
                     "type": "office",
                     "head": "Vacante",
                     "initial_collapsed": true
@@ -1147,50 +1147,50 @@
                 ]
               },
               {
-                "name": "Escuela de Enfermería",
+                "name": "School of Nursing",
                 "type": "school",
                 "head": "Sherily Pereira Morales",
-                "head_title": "Decana Interina",
+                "head_title": "Interim Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Decano Asociado de Asuntos Académicos",
+                    "name": "Associate Dean of Academic Affairs",
                     "type": "leadership",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Director del Departamento Académico",
+                        "name": "Academic Department Director",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Programas Académicos",
+                        "name": "Academic Programs",
                         "type": "program_group",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Bachillerato en Ciencias en Enfermería (BSN)",
+                            "name": "Bachelor of Science in Nursing (BSN)",
                             "type": "degree_program",
                             "head": "Vacante",
-                            "head_title": "Director del Programa BSN",
+                            "head_title": "BSN Program Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Maestría en Ciencias en Enfermería (MSN)",
+                            "name": "Master of Science in Nursing (MSN)",
                             "type": "degree_program",
                             "head": "Vacante",
-                            "head_title": "Director del Programa MSN",
+                            "head_title": "MSN Program Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Doctorado en Práctica de Enfermería con Especialidad en Anestesia (DNP-SA)",
+                            "name": "Doctor of Nursing Practice with Specialty in Anesthesia (DNP-SA)",
                             "type": "degree_program",
                             "head": "Vacante",
-                            "head_title": "Director del Programa DNP-SA",
+                            "head_title": "DNP-SA Program Director",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Director Asistente del Programa DNP-SA",
+                                "name": "Assistant Director of DNP-SA Program",
                                 "type": "position",
                                 "head": "Vacante",
                                 "initial_collapsed": true
@@ -1198,26 +1198,26 @@
                             ]
                           },
                           {
-                            "name": "Doctorado en Filosofía en Enfermería (Ph.D.)",
+                            "name": "Doctor of Philosophy in Nursing (Ph.D.)",
                             "type": "degree_program",
                             "head": "Vacante",
-                            "head_title": "Director del Programa Ph.D.",
+                            "head_title": "Ph.D. Program Director",
                             "initial_collapsed": true
                           }
                         ]
                       },
                       {
-                        "name": "Director de la Oficina de Evaluación",
+                        "name": "Director of Evaluation Office",
                         "type": "department",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Director del Centro de Simulación de Enfermería",
+                        "name": "Director of Nursing Simulation Center",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Coordinador del Centro de Simulación de Enfermería",
+                            "name": "Nursing Simulation Center Coordinator",
                             "type": "position",
                             "head": "Vacante",
                             "initial_collapsed": true
@@ -1225,30 +1225,30 @@
                         ]
                       },
                       {
-                        "name": "Coordinador Clínico",
+                        "name": "Clinical Coordinator",
                         "type": "position",
                         "head": "Vacante",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Director de la División de Educación Continua y Oficina Profesional",
+                        "name": "Director of Continuing Education and Professional Office",
                         "type": "department",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Director de Alcance Comunitario de Enfermería",
+                    "name": "Director of Nursing Community Outreach",
                     "type": "department",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Decano Asistente de Asuntos Estudiantiles",
+                    "name": "Assistant Dean of Student Affairs",
                     "type": "leadership",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Consejero",
+                        "name": "Counselor",
                         "type": "position",
                         "head": "Vacante",
                         "initial_collapsed": true
@@ -1256,19 +1256,19 @@
                     ]
                   },
                   {
-                    "name": "Decano Asistente de Investigación",
+                    "name": "Assistant Dean of Research",
                     "type": "leadership",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Director del Centro de Investigación y Práctica Basada en Evidencia",
+                        "name": "Director of Research and Evidence-Based Practice Center",
                         "type": "department",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Administrador",
+                    "name": "Administrator",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
@@ -1276,101 +1276,101 @@
                 ]
               },
               {
-                "name": "Escuela de Farmacia",
+                "name": "School of Pharmacy",
                 "type": "school",
                 "head": "Wanda T. Maldonado Dávila",
-                "head_title": "Decana",
+                "head_title": "Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Decano Asociado de Asuntos Académicos",
+                    "name": "Associate Dean of Academic Affairs",
                     "type": "leadership",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "División de Evaluación de Currículum y Efectividad Institucional",
+                        "name": "Curriculum Evaluation and Institutional Effectiveness Division",
                         "type": "division",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "División de Educación Continua y Estudios Profesionales",
+                        "name": "Continuing Education and Professional Studies Division",
                         "type": "division",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Decano Asistente de Investigación y Programas de Postgrado",
+                    "name": "Assistant Dean of Research and Graduate Programs",
                     "type": "leadership",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Programa de Postgrado",
+                        "name": "Graduate Program",
                         "type": "program",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Decano Asistente de Asuntos Estudiantiles",
+                    "name": "Assistant Dean of Student Affairs",
                     "type": "leadership",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Administrador",
+                    "name": "Administrator",
                     "type": "position",
                     "head": "Vacante",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Director de Desarrollo Institucional y Relaciones Externas",
+                    "name": "Director of Institutional Development and External Relations",
                     "type": "leadership",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Director del Departamento de Práctica de Farmacia",
+                    "name": "Director of Pharmacy Practice Department",
                     "type": "department",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Programas de Residencia en Farmacia",
+                        "name": "Pharmacy Residency Programs",
                         "type": "program",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Oficina de Educación Experiencial",
+                        "name": "Office of Experiential Education",
                         "type": "office",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Centro de Información de Medicamentos e Investigación",
+                        "name": "Drug Information and Research Center",
                         "type": "center",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Museo de Farmacia y Jardín de Plantas Medicinales",
+                    "name": "Pharmacy Museum and Medicinal Plants Garden",
                     "type": "facility",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Director del Departamento de Ciencias Farmacéuticas",
+                    "name": "Director of Pharmaceutical Sciences Department",
                     "type": "department",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Unidad de Apoyo de Laboratorios",
+                        "name": "Laboratory Support Unit",
                         "type": "unit",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Laboratorios de Investigación",
+                        "name": "Research Laboratories",
                         "type": "facility",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Laboratorio de Habilidades Farmacéuticas",
+                        "name": "Pharmaceutical Skills Laboratory",
                         "type": "facility",
                         "initial_collapsed": true
                       }
@@ -1379,94 +1379,94 @@
                 ]
               },
               {
-                "name": "Escuela de Profesiones de la Salud",
+                "name": "School of Health Professions",
                 "type": "school",
                 "head": "Lourdes E. Soto de Laurido, Ed.D., MPHE, MHS honoris causa",
-                "head_title": "Decana",
+                "head_title": "Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Junta Asesora",
+                    "name": "Advisory Board",
                     "type": "advisory",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Comités Permanentes",
+                    "name": "Standing Committees",
                     "type": "committee_group",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficina de Asuntos Estudiantiles",
+                    "name": "Office of Student Affairs",
                     "type": "office",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Clínicas de Salud",
+                    "name": "Health Clinics",
                     "type": "clinic_group",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Oficina de Asuntos Académicos",
+                    "name": "Office of Academic Affairs",
                     "type": "office",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Departamento de Programas de Pregrado",
+                        "name": "Undergraduate Programs Department",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Oficina de Asuntos Administrativos",
+                            "name": "Office of Administrative Affairs",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Oficina de Recursos Externos",
+                            "name": "Office of External Resources",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Programas",
+                            "name": "Programs",
                             "type": "program_group",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Asistencia Dental con Funciones Expandidas",
+                                "name": "Dental Assistance with Expanded Functions",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Educación en Salud",
+                                "name": "Health Education",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Ciencias de la Salud",
+                                "name": "Health Sciences",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Tecnología Médica",
+                                "name": "Medical Technology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Tecnología de Medicina Nuclear",
+                                "name": "Nuclear Medicine Technology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Tecnología Oftálmica",
+                                "name": "Ophthalmic Technology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Tecnología Radiológica",
+                                "name": "Radiologic Technology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Tecnología Veterinaria",
+                                "name": "Veterinary Technology",
                                 "type": "program",
                                 "initial_collapsed": true
                               }
@@ -1475,64 +1475,64 @@
                         ]
                       },
                       {
-                        "name": "Departamento de Programas Graduados",
+                        "name": "Graduate Programs Department",
                         "type": "department",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Oficina de Sistemas de Información y Recursos Educativos",
+                            "name": "Office of Information Systems and Educational Resources",
                             "type": "office",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Programas",
+                            "name": "Programs",
                             "type": "program_group",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Administración de Información en Salud",
+                                "name": "Health Information Administration",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Audiología",
+                                "name": "Audiology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Ciencias en Laboratorio Clínico",
+                                "name": "Clinical Laboratory Sciences",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Citotecnología",
+                                "name": "Cytotechnology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Internado en Dietética",
+                                "name": "Dietetic Internship",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Patología del Habla-Lenguaje",
+                                "name": "Speech-Language Pathology",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Terapia Física",
+                                "name": "Physical Therapy",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Terapia Ocupacional",
+                                "name": "Occupational Therapy",
                                 "type": "program",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Investigación Clínica",
+                                "name": "Clinical Research",
                                 "type": "program",
-                                "note": "Grado académico en conjunto con la Escuela de Medicina de UPR-MSC",
+                                "note": "Academic degree joint with UPR-MSC School of Medicine",
                                 "initial_collapsed": true
                               }
                             ]
@@ -1540,34 +1540,34 @@
                         ]
                       },
                       {
-                        "name": "División de Educación Continua y Estudios Profesionales",
+                        "name": "Division of Continuing Education and Professional Studies",
                         "type": "division",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Proyectos",
+                            "name": "Projects",
                             "type": "project_group",
                             "initial_collapsed": true,
                             "sub_elements": [
                               {
-                                "name": "Proyecto Interdisciplinario de Excelencia en Servicios (PIES)",
+                                "name": "Interdisciplinary Project for Excellence in Services (PIES)",
                                 "type": "project",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Instituto de Investigación para la Promoción de la Salud Global y Educación en Salud (IIPESAG)",
+                                "name": "Institute of Research for Global Health Promotion and Health Education (IIPESAG)",
                                 "type": "project",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Centro de Estudios Avanzados en Emergencias Médicas (CEAEM)",
+                                "name": "Center for Advanced Studies in Medical Emergencies (CEAEM)",
                                 "type": "project",
                                 "initial_collapsed": true
                               },
                               {
-                                "name": "Hispanos en Capacidad de Investigación (HIREC)",
+                                "name": "Hispanics in Research Capability (HIREC)",
                                 "type": "project",
-                                "note": "Grado académico en conjunto con la Escuela de Medicina de UPR-MSC",
+                                "note": "Academic degree joint with UPR-MSC School of Medicine",
                                 "initial_collapsed": true
                               }
                             ]
@@ -1579,20 +1579,20 @@
                 ]
               },
               {
-                "name": "Escuela Graduada de Salud Pública",
+                "name": "Graduate School of Public Health",
                 "type": "school",
                 "head": "Edgardo Ruiz Cora, MPH, PhD",
-                "head_title": "Decano",
+                "head_title": "Dean",
                 "initial_collapsed": true,
                 "sub_elements": [
                   {
-                    "name": "Asistente Especial del Decano - Oficina de Administración",
+                    "name": "Special Assistant to the Dean - Administration Office",
                     "type": "leadership",
                     "head": "Juan J. Tejada Guzmán, MBA",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Centro de Informática",
+                        "name": "Informatics Center",
                         "type": "center",
                         "head": "José Sobrino Delgado",
                         "head_title": "Director",
@@ -1601,36 +1601,36 @@
                     ]
                   },
                   {
-                    "name": "Asuntos Académicos",
+                    "name": "Academic Affairs",
                     "type": "office",
                     "head": "Ivelisse García Meléndez, MS, EdD",
-                    "head_title": "Directora",
+                    "head_title": "Director",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Unidades de Apoyo Académico",
+                        "name": "Academic Support Units",
                         "type": "unit_group",
                         "initial_collapsed": true,
                         "sub_elements": [
                           {
-                            "name": "Oficina de Currículo y Evaluación",
+                            "name": "Office of Curriculum and Evaluation",
                             "type": "office",
                             "head": "Ivelisse M. García Meléndez, EdD",
-                            "head_title": "Directora",
+                            "head_title": "Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "División de Educación Continua y Estudios Profesionales",
+                            "name": "Division of Continuing Education and Professional Studies",
                             "type": "division",
                             "head": "Xionara Castillo Meléndez, MS",
-                            "head_title": "Directora",
+                            "head_title": "Director",
                             "initial_collapsed": true
                           },
                           {
-                            "name": "Programas Doctorales en Salud Pública",
+                            "name": "Doctoral Programs in Public Health",
                             "type": "program",
                             "head": "Ivelisse M. García Meléndez, EdD",
-                            "head_title": "Directora",
+                            "head_title": "Director",
                             "initial_collapsed": true
                           }
                         ]
@@ -1638,75 +1638,75 @@
                     ]
                   },
                   {
-                    "name": "Asuntos Estudiantiles",
+                    "name": "Student Affairs",
                     "type": "office",
                     "head": "Yiselly Vázquez Guzmán, MPHE, MA, CGG, MCHES, EdD",
-                    "head_title": "Directora",
+                    "head_title": "Director",
                     "initial_collapsed": true
                   },
                   {
-                    "name": "Unidades Especiales de Investigación y Servicio",
+                    "name": "Special Research and Service Units",
                     "type": "unit_group",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Centro para la Evaluación e Investigación Sociomédica",
+                        "name": "Center for Sociomedical Evaluation and Research",
                         "type": "center",
                         "head": "Edgardo Ruiz Cora, MPH, PhD",
                         "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Programa de Planificación Familiar, Título X",
+                        "name": "Family Planning Program, Title X",
                         "type": "program",
                         "head": "Ramón Sánchez Rodríguez, MD",
                         "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Instituto de Discapacidades del Desarrollo",
+                        "name": "Developmental Disabilities Institute",
                         "type": "institute",
                         "head": "Carol Salas Pagán, PsyD",
-                        "head_title": "Directora",
+                        "head_title": "Director",
                         "initial_collapsed": true
                       }
                     ]
                   },
                   {
-                    "name": "Departamentos",
+                    "name": "Departments",
                     "type": "department_group",
                     "initial_collapsed": true,
                     "sub_elements": [
                       {
-                        "name": "Bioestadística y Epidemiología",
+                        "name": "Biostatistics and Epidemiology",
                         "type": "department",
                         "head": "Juan C. Reyes Pulliza, EdD",
                         "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Administración de Servicios de Salud",
+                        "name": "Health Services Administration",
                         "type": "department",
                         "head": "Marisol Peña Orellana, MS, EdD",
-                        "head_title": "Directora",
+                        "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Ciencias Sociales",
+                        "name": "Social Sciences",
                         "type": "department",
                         "head": "Hiram V. Arroyo Acevedo, PhD",
                         "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Desarrollo Humano",
+                        "name": "Human Development",
                         "type": "department",
                         "head": "Ana M. Parrilla Rodríguez, MD",
-                        "head_title": "Directora",
+                        "head_title": "Director",
                         "initial_collapsed": true
                       },
                       {
-                        "name": "Salud Ambiental",
+                        "name": "Environmental Health",
                         "type": "department",
                         "head": "Luis A. Bonilla Soto, PhD",
                         "head_title": "Director",
@@ -1719,69 +1719,69 @@
             ]
           },
           {
-            "name": "Oficinas de Apoyo y Personal de Rectoría",
+            "name": "Support Offices and Rector's Staff",
             "type": "support_structure",
             "initial_collapsed": true,
             "sub_elements": [
               {
-                "name": "Presupuesto",
+                "name": "Budget",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Procuraduría Claustral",
+                "name": "Faculty Ombudsman",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Asesoría Legal",
+                "name": "Legal Advisor",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Procuraduría Estudiantil",
+                "name": "Student Ombudsman",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Junta de Donaciones Anatómicas",
+                "name": "Anatomical Donations Board",
                 "type": "committee",
                 "initial_collapsed": true
               },
               {
-                "name": "Junta Administrativa",
+                "name": "Administrative Board",
                 "type": "committee",
                 "initial_collapsed": true
               },
               {
-                "name": "Prensa y Comunicaciones",
+                "name": "Press and Communications",
                 "type": "office",
                 "initial_collapsed": true
               },
               {
-                "name": "Senado Académico",
+                "name": "Academic Senate",
                 "type": "governing_body",
                 "head": "Raul Rivera González",
-                "head_title": "Presidente",
+                "head_title": "President",
                 "initial_collapsed": true
               },
               {
-                "name": "Centro de Primates",
+                "name": "Primate Center",
                 "type": "research_facility",
                 "initial_collapsed": true
               },
               {
-                "name": "Ayuda y Servicios al Personal",
+                "name": "Employee Help and Services",
                 "type": "service",
                 "initial_collapsed": true
               },
               {
-                "name": "Sistemas de Información",
+                "name": "Information Systems",
                 "type": "department",
                 "initial_collapsed": true
               },
               {
-                "name": "Secretario Ejecutivo",
+                "name": "Executive Secretary",
                 "type": "position",
                 "head": "Raul Rivera González",
                 "initial_collapsed": true
